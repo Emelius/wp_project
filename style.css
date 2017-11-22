@@ -12,16 +12,29 @@
 }
 
 html {
+<<<<<<< HEAD
   height: 100%;
 }
 
 body {
   height: 100%;
   font-family: 'Nunito', sans-serif;
+=======
+    height: calc(100% - 54px);
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    /*margin-top: -54px;*/
+    top: 0px;
+>>>>>>> Samuels-branch
 }
 
 #pageContainer {
-
+    position: relative;
+    min-height: 100%;
+    margin-bottom: calc(-196px - 54px);
 }
 
 /********** Header ******/
@@ -56,6 +69,7 @@ header ul li a:hover {
 /********** Main ******/
 
 main:after {
+<<<<<<< HEAD
   display: block;
   content: "";
   height: 196px;
@@ -81,9 +95,15 @@ main:after {
   float:left;
   height:20px;
   width:20px;
+=======
+    display: block;
+    content: "";
+    height: calc(196px + 54px);
+>>>>>>> Samuels-branch
 }
 
 footer {
+    position: absolute;
   text-align:center;
   color: white;
   width: 100%;
