@@ -53,6 +53,7 @@ main:after {
 
 #socialMediaOuter {
   overflow:hidden;
+  display: inline-block;
 }
 
 #socialMediaOuter p{
