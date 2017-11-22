@@ -32,10 +32,10 @@ add_action( 'init', 'create_team' );
 
 /********************* Create categories option for events  **********************/
 
-function create_categories() {
+function create_categories_events() {
 
   $labels = array(
-    'name'                       => _x( 'Categories', 'Taxonomy General Name', 'EAcademy' ),
+    'name'                       => _x( 'Event Categories', 'Taxonomy General Name', 'EAcademy' ),
     'singular_name'              => _x( 'category', 'Taxonomy Singular Name', 'EAcademy' ),
     'menu_name'                  => __( 'Categories', 'EAcademy' ),
     'all_items'                  => __( 'All categories', 'EAcademy' ),
@@ -61,7 +61,7 @@ function create_categories() {
 }
 
 
-add_action( 'init', 'create_categories' );
+add_action( 'init', 'create_categories_events' );
 
 
 /********************* Create categories option for news  **********************/
@@ -69,7 +69,7 @@ add_action( 'init', 'create_categories' );
 function create_categories_news() {
 
   $labels = array(
-    'name'                       => _x( 'Categories', 'Taxonomy General Name', 'EAcademy' ),
+    'name'                       => _x( 'News Categories', 'Taxonomy General Name', 'EAcademy' ),
     'singular_name'              => _x( 'category', 'Taxonomy Singular Name', 'EAcademy' ),
     'menu_name'                  => __( 'Categories', 'EAcademy' ),
     'all_items'                  => __( 'All categories', 'EAcademy' ),
@@ -93,7 +93,6 @@ function create_categories_news() {
   register_taxonomy( 'categories', array('news'), $args );
 
 }
-
 
 add_action( 'init', 'create_categories_news' );
 
