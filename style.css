@@ -72,6 +72,7 @@ main:after {
 #socialMediaOuter {
     margin-top: 32px;
   display: inline-block;
+  padding-left: 16px;
 }
 
 #socialMediaOuter p{
