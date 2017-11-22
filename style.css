@@ -21,6 +21,13 @@ body {
 
 /********** Header ******/
 
+h1 {
+  text-align:center;
+  color: #faae49;
+  font-size:30pt;
+  font-weight:400;
+}
+
 header ul {
   overflow: hidden;
 }
