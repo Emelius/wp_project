@@ -7,8 +7,7 @@ get_header();
 
     <img class="logoBackground" src="<?php echo $uri ?>/images/groupPhoto.jpg">
 
-    <div class='logo'>
-        <?php
+    <?php
         $custom_logo_id = get_theme_mod( 'custom_logo' );
         $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
         if ( has_custom_logo() ) {
@@ -17,8 +16,7 @@ get_header();
         } else {
                 echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
         }
-        ?>
-    </div>
+    ?>
 </div>
 
 <?php
