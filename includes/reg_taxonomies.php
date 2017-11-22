@@ -32,37 +32,6 @@ add_action( 'init', 'create_team' );
 
 /********************* Create categories option for events  **********************/
 
-function create_categories_events() {
-
-  $labels = array(
-    'name'                       => _x( 'Event Categories', 'Taxonomy General Name', 'EAcademy' ),
-    'singular_name'              => _x( 'category', 'Taxonomy Singular Name', 'EAcademy' ),
-    'menu_name'                  => __( 'Categories', 'EAcademy' ),
-    'all_items'                  => __( 'All categories', 'EAcademy' ),
-    'new_item_name'              => __( 'New category', 'EAcademy' ),
-    'add_new_item'               => __( 'Add new category', 'EAcademy' ),
-    'edit_item'                  => __( 'Edit categories', 'EAcademy' ),
-    'update_item'                => __( 'Update categories', 'EAcademy' ),
-    'add_or_remove_items'        => __( 'Add or remove category', 'EAcademy' ),
-    'popular_items'              => __( 'Popular categories', 'EAcademy' ),
-	);
-	$args = array(
-    'labels'                     => $labels,
-    'hierarchical'               => true,
-    'public'                     => true,
-    'show_ui'                    => true,
-    'show_admin_column'          => true,
-    'show_in_nav_menus'          => true,
-    'show_tagcloud'              => true,
-    'query_var'                  => 'categories',
-  );
-  register_taxonomy( 'categories', array('event'), $args );
-
-}
-
-
-add_action( 'init', 'create_categories_events' );
-
 add_action( 'init', 'add_event_tax' );
 
 function add_event_tax() {
@@ -83,37 +52,9 @@ function add_event_tax() {
 
 /********************* Create categories option for news  **********************/
 
-function create_categories_news() {
-
-  $labels = array(
-    'name'                       => _x( 'News Categories', 'Taxonomy General Name', 'EAcademy' ),
-    'singular_name'              => _x( 'category', 'Taxonomy Singular Name', 'EAcademy' ),
-    'menu_name'                  => __( 'Categories', 'EAcademy' ),
-    'all_items'                  => __( 'All categories', 'EAcademy' ),
-    'new_item_name'              => __( 'New category', 'EAcademy' ),
-    'add_new_item'               => __( 'Add new category', 'EAcademy' ),
-    'edit_item'                  => __( 'Edit categories', 'EAcademy' ),
-    'update_item'                => __( 'Update categories', 'EAcademy' ),
-    'add_or_remove_items'        => __( 'Add or remove category', 'EAcademy' ),
-    'popular_items'              => __( 'Popular categories', 'EAcademy' ),
-	);
-	$args = array(
-    'labels'                     => $labels,
-    'hierarchical'               => true,
-    'public'                     => true,
-    'show_ui'                    => true,
-    'show_admin_column'          => true,
-    'show_in_nav_menus'          => true,
-    'show_tagcloud'              => true,
-    'query_var'                  => 'categories',
-  );
-  register_taxonomy( 'categories', array('news'), $args );
-
-}
-
-add_action( 'init', 'create_categories_news' );
 
 add_action( 'init', 'add_news_tax' );
+
 function add_news_tax() {
 	register_taxonomy(
 		'news_category',
