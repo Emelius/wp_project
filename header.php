@@ -8,6 +8,8 @@
   </head>
   <body>
 
+  <div id="pageContainer">
+
     <div id="header_wrap">
         <header>
 
@@ -32,3 +34,5 @@
         </header>
 
     </div>
+
+    <main>

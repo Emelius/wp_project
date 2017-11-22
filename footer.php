@@ -1,3 +1,4 @@
+</main>
 <footer>
 
   © JSA Entrepreneurship Academy
