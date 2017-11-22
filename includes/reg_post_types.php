@@ -1,5 +1,5 @@
 <?php
-function project_post_type() {
+function event_post_type() {
 
     /* Set up the arguments for the post type. */
     $args = array(
@@ -75,15 +75,15 @@ function project_post_type() {
         /**
          * Whether the post type has an index/archive/root page like the "page for posts" for regular
          * posts. If set to TRUE, the post type name will be used for the archive slug.  You can also
-         * set this to a string to control the exact name of the archive slug. (site.com/projects)
+         * set this to a string to control the exact name of the archive slug. (site.com/events)
          */
-        'has_archive'         => 'projects', // bool|string (defaults to FALSE)
+        'has_archive'         => 'events', // bool|string (defaults to FALSE)
 
         /**
          * Sets the query_var key for this post type. If set to TRUE, the post type name will be used.
          * You can also set this to a custom string to control the exact key.
          */
-        'query_var'           => 'project', // bool|string (defaults to TRUE - post type name)
+        'query_var'           => 'event', // bool|string (defaults to TRUE - post type name)
 
         /**
          * A string used to build the edit, delete, and read capabilities for posts of this type. You
@@ -106,7 +106,7 @@ function project_post_type() {
          * rules from being created.
          */
         'rewrite' => array(
-      		'slug'                  => 'project',
+      		'slug'                  => 'event',
       		'with_front'            => false,
       		'pages'                 => true,
       		'feeds'                 => false,
@@ -138,22 +138,22 @@ function project_post_type() {
             'thumbnail',
 
             /* Displays comments meta box.  If set, comments (any type) are allowed for the post. */
-            //'comments',
+            'comments',
 
             /* Displays meta box to send trackbacks from the edit post screen. */
-            //'trackbacks',
+            'trackbacks',
 
             /* Displays the Custom Fields meta box. Post meta is supported regardless. */
-            //'custom-fields',
+            'custom-fields',
 
             /* Displays the Revisions meta box. If set, stores post revisions in the database. */
-            //'revisions',
+            'revisions',
 
             /* Displays the Attributes meta box with a parent selector and menu_order input box. */
-            //'page-attributes',
+            'page-attributes',
 
             /* Displays the Format meta box and allows post formats to be used with the posts. */
-            //'post-formats',
+            'post-formats',
         ),
 
         /**
@@ -161,31 +161,31 @@ function project_post_type() {
          * labels do not cover post updated, error, and related messages.  You'll need to filter the
          * 'post_updated_messages' hook to customize those.
          */
-        'taxonomies'            => array( 'project_skill', 'project_type'),
+        //'taxonomies'            => array( 'event_skill', 'event_type'),
         'labels' => array(
-            'name'               => __( 'Projects',                   'project-textdomain' ),
-            'singular_name'      => __( 'Project',                    'project-textdomain' ),
-            'menu_name'          => __( 'Projects',                   'project-textdomain' ),
-            'name_admin_bar'     => __( 'Projects',                   'project-textdomain' ),
-            'add_new'            => __( 'Add New',                    'project-textdomain' ),
-            'add_new_item'       => __( 'Add New Project',            'project-textdomain' ),
-            'edit_item'          => __( 'Edit Project',               'project-textdomain' ),
-            'new_item'           => __( 'New Project',                'project-textdomain' ),
-            'view_item'          => __( 'View Project',               'project-textdomain' ),
-            'search_items'       => __( 'Search Projects',            'project-textdomain' ),
-            'not_found'          => __( 'No projects found',          'project-textdomain' ),
-            'not_found_in_trash' => __( 'No projects found in trash', 'project-textdomain' ),
-            'all_items'          => __( 'All Projects',               'project-textdomain' ),
+            'name'               => __( 'Events',                   'event-textdomain' ),
+            'singular_name'      => __( 'Event',                    'event-textdomain' ),
+            'menu_name'          => __( 'Events',                   'event-textdomain' ),
+            'name_admin_bar'     => __( 'Events',                   'event-textdomain' ),
+            'add_new'            => __( 'Add New',                  'event-textdomain' ),
+            'add_new_item'       => __( 'Add New Event',            'event-textdomain' ),
+            'edit_item'          => __( 'Edit Event',               'event-textdomain' ),
+            'new_item'           => __( 'New Event',                'event-textdomain' ),
+            'view_item'          => __( 'View Event',               'event-textdomain' ),
+            'search_items'       => __( 'Search Events',            'event-textdomain' ),
+            'not_found'          => __( 'No events found',          'event-textdomain' ),
+            'not_found_in_trash' => __( 'No events found in trash', 'event-textdomain' ),
+            'all_items'          => __( 'All Events',               'event-textdomain' ),
         )
     );
 
     /* Register the post type. */
     register_post_type(
-        'project', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
+        'event', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
         $args      // Arguments for post type.
     );
 }
 
 /* Register custom post types on the 'init' hook. */
-add_action( 'init', 'project_post_type' );
+add_action( 'init', 'event_post_type' );
  ?>
