@@ -36,11 +36,11 @@ add_action( 'init', 'add_event_tax' );
 
 function add_event_tax() {
 	register_taxonomy(
-		'event_category',
+		'event_categories',
 		'event',
 		array(
-			'label' => __( 'Event Category' ),
-			'rewrite' => array( 'slug' => 'event_category' ),
+			'label' => __( 'Event Categories' ),
+			'rewrite' => array( 'slug' => 'event_categories' ),
 			'hierarchical' => true,
 			'has_archive' => true,
 			'public' => true,
@@ -57,11 +57,11 @@ add_action( 'init', 'add_news_tax' );
 
 function add_news_tax() {
 	register_taxonomy(
-		'news_category',
+		'news_categories',
 		'news',
 		array(
-			'label' => __( 'News Category' ),
-			'rewrite' => array( 'slug' => 'news_category' ),
+			'label' => __( 'News Categories' ),
+			'rewrite' => array( 'slug' => 'news_categories' ),
 			'hierarchical' => true,
 			'has_archive' => true,
 			'public' => true,
