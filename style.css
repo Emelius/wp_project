@@ -39,6 +39,10 @@ h1 {
   font-weight:400;
 }
 
+header {
+    padding: 16px;
+}
+
 header ul {
   overflow: hidden;
 }
@@ -59,6 +63,10 @@ header ul li a:hover {
   color: #faae49;
 }
 
+header .custom-logo {
+    width: 300px;
+    height: auto;
+}
 /********** Main ******/
 
 main:after {
