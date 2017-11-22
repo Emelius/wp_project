@@ -390,8 +390,8 @@ add_action( 'init', 'news_post_type' );
 
 
 
-/************************ Set up TEAMS post type **************************/
-function teams_post_type() {
+/************************ Set up members post type **************************/
+function members_post_type() {
 
     /* Set up the arguments for the post type. */
     $args = array(
@@ -469,13 +469,13 @@ function teams_post_type() {
          * posts. If set to TRUE, the post type name will be used for the archive slug.  You can also
          * set this to a string to control the exact name of the archive slug. (site.com/events)
          */
-        'has_archive'         => 'teams', // bool|string (defaults to FALSE)
+        'has_archive'         => 'members', // bool|string (defaults to FALSE)
 
         /**
          * Sets the query_var key for this post type. If set to TRUE, the post type name will be used.
          * You can also set this to a custom string to control the exact key.
          */
-        'query_var'           => 'teams', // bool|string (defaults to TRUE - post type name)
+        'query_var'           => 'members', // bool|string (defaults to TRUE - post type name)
 
         /**
          * A string used to build the edit, delete, and read capabilities for posts of this type. You
@@ -498,7 +498,7 @@ function teams_post_type() {
          * rules from being created.
          */
         'rewrite' => array(
-      		'slug'                  => 'teams',
+      		'slug'                  => 'members',
       		'with_front'            => false,
       		'pages'                 => true,
       		'feeds'                 => false,
@@ -520,32 +520,8 @@ function teams_post_type() {
             /* Post content ($post->post_content). */
             'editor',
 
-            /* Post excerpt ($post->post_excerpt). */
-            //'excerpt',
-
-            /* Post author ($post->post_author). */
-            'author',
-
             /* Featured images (the user's theme must support 'post-thumbnails'). */
             'thumbnail',
-
-            /* Displays comments meta box.  If set, comments (any type) are allowed for the post. */
-            'comments',
-
-            /* Displays meta box to send trackbacks from the edit post screen. */
-            'trackbacks',
-
-            /* Displays the Custom Fields meta box. Post meta is supported regardless. */
-            'custom-fields',
-
-            /* Displays the Revisions meta box. If set, stores post revisions in the database. */
-            'revisions',
-
-            /* Displays the Attributes meta box with a parent selector and menu_order input box. */
-            'page-attributes',
-
-            /* Displays the Format meta box and allows post formats to be used with the posts. */
-            'post-formats',
         ),
 
         /**
@@ -555,31 +531,31 @@ function teams_post_type() {
          */
         //'taxonomies'            => array( 'event_skill', 'event_type'),
         'labels' => array(
-            'name'               => __( 'Teams',                   'teams-textdomain' ),
-            'singular_name'      => __( 'Team',                    'teams-textdomain' ),
-            'menu_name'          => __( 'Team',                   'teams-textdomain' ),
-            'name_admin_bar'     => __( 'Team',                   'teams-textdomain' ),
-            'add_new'            => __( 'Add New',                  'teams-textdomain' ),
-            'add_new_item'       => __( 'Add New Team',            'teams-textdomain' ),
-            'edit_item'          => __( 'Edit Teams',               'teams-textdomain' ),
-            'new_item'           => __( 'New Teams',                'teams-textdomain' ),
-            'view_item'          => __( 'View Teams',               'teams-textdomain' ),
-            'search_items'       => __( 'Search Teams',            'teams-textdomain' ),
-            'not_found'          => __( 'No teams found',          'teams-textdomain' ),
-            'not_found_in_trash' => __( 'No teams found in trash', 'teams-textdomain' ),
-            'all_items'          => __( 'All Teams',               'teams-textdomain' ),
+            'name'               => __( 'Members',                   'members-textdomain' ),
+            'singular_name'      => __( 'Member',                    'members-textdomain' ),
+            'menu_name'          => __( 'Members',                   'members-textdomain' ),
+            'name_admin_bar'     => __( 'Members',                   'members-textdomain' ),
+            'add_new'            => __( 'Add New',                  'members-textdomain' ),
+            'add_new_item'       => __( 'Add New Member',            'members-textdomain' ),
+            'edit_item'          => __( 'Edit members',               'members-textdomain' ),
+            'new_item'           => __( 'New members',                'members-textdomain' ),
+            'view_item'          => __( 'View members',               'members-textdomain' ),
+            'search_items'       => __( 'Search members',            'members-textdomain' ),
+            'not_found'          => __( 'No members found',          'members-textdomain' ),
+            'not_found_in_trash' => __( 'No members found in trash', 'members-textdomain' ),
+            'all_items'          => __( 'All members',               'members-textdomain' ),
         )
     );
 
     /* Register the post type. */
     register_post_type(
-        'teams', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
+        'members', // Post type name. Max of 20 characters. Uppercase and spaces not allowed.
         $args      // Arguments for post type.
     );
 }
 
 /* Register custom post types on the 'init' hook. */
-add_action( 'init', 'teams_post_type' );
+add_action( 'init', 'members_post_type' );
 
 
  ?>
