@@ -63,6 +63,23 @@ function create_categories_events() {
 
 add_action( 'init', 'create_categories_events' );
 
+add_action( 'init', 'add_event_tax' );
+
+function add_event_tax() {
+	register_taxonomy(
+		'event_category',
+		'event',
+		array(
+			'label' => __( 'Event Category' ),
+			'rewrite' => array( 'slug' => 'event_category' ),
+			'hierarchical' => true,
+			'has_archive' => true,
+			'public' => true,
+			'rewrite' => true
+		)
+	);
+}
+
 
 /********************* Create categories option for news  **********************/
 
@@ -95,5 +112,21 @@ function create_categories_news() {
 }
 
 add_action( 'init', 'create_categories_news' );
+
+add_action( 'init', 'add_news_tax' );
+function add_news_tax() {
+	register_taxonomy(
+		'news_category',
+		'news',
+		array(
+			'label' => __( 'News Category' ),
+			'rewrite' => array( 'slug' => 'news_category' ),
+			'hierarchical' => true,
+			'has_archive' => true,
+			'public' => true,
+			'rewrite' => true
+		)
+	);
+}
 
  ?>
