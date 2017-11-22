@@ -4,6 +4,8 @@
     Description: Pls work
 */
 
+/********** General ******/
+
 html {
   height: 100%;
 }
@@ -16,6 +18,8 @@ body {
 #pageContainer {
 
 }
+
+/********** Header ******/
 
 header ul {
   overflow: hidden;
@@ -37,10 +41,33 @@ header ul li a:hover {
   color: #faae49;
 }
 
+/********** Main ******/
+
 main:after {
   display: block;
   content: "";
   height: 196px;
+}
+
+/********** Footer ******/
+
+#socialMediaOuter {
+  overflow:hidden;
+}
+
+#socialMediaOuter p{
+  margin:0 20px 0 10px;
+  float:left;
+}
+
+.socialInnerDiv{
+  clear:left;
+}
+
+.icon img {
+  float:left;
+  height:20px;
+  width:20px;
 }
 
 footer {
