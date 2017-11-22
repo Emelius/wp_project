@@ -4,7 +4,7 @@
     Description: Pls work
 */
 
-/********** General ******/
+/************** General *****************/
 
 * {
   padding:0;
@@ -30,7 +30,7 @@ body {
     margin-bottom: calc(-196px - 54px);
 }
 
-/********** Header ******/
+/***************** Header ***************/
 
 h1 {
   text-align:center;
@@ -40,11 +40,12 @@ h1 {
 }
 
 header {
-    padding: 16px;
+
 }
 
 header ul {
   overflow: hidden;
+  background-color: black;
 }
 
 header li {
@@ -53,7 +54,7 @@ header li {
 }
 
 header ul li a {
-  color:black;
+  color:white;
   text-decoration: none;
   padding: 8px 4px;
   margin: 8px 4px;
@@ -62,6 +63,7 @@ header ul li a {
 header ul li a:hover {
   color: #faae49;
 }
+
 
 .bigLogo {
     position: relative;
@@ -92,7 +94,8 @@ header ul li a:hover {
     width: 256px;
     height: auto;
 }
-/********** Main ******/
+
+/************ Main **************/
 
 main:after {
     display: block;
@@ -100,7 +103,7 @@ main:after {
     height: calc(196px + 54px);
 }
 
-/********** Footer ******/
+/************ Footer ************/
 
 #socialMediaOuter {
     margin-top: 32px;
@@ -141,6 +144,8 @@ footer h6 {
     font-size:8pt;
     font-weight:300;
 }
+
+/************ Responsive ************/
 
 @media (min-width: 750px) {
     .custom-logo {
