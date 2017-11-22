@@ -5,21 +5,20 @@
 */
 
 html {
-    position: relative;
-    height: 100%;
+    height: calc(100% - 54px);
 }
 
 body {
-    position: absolute;
     height: 100%;
     margin: 0px;
+    /*margin-top: -54px;*/
     top: 0px;
 }
 
 #pageContainer {
     position: relative;
     min-height: 100%;
-    margin-bottom: -144px;
+    margin-bottom: calc(-196px - 54px);
 }
 
 header li {
@@ -41,7 +40,7 @@ header li ul a:hover {
 main:after {
     display: block;
     content: "";
-    height: 196px;
+    height: calc(196px + 54px);
 }
 
 footer {
