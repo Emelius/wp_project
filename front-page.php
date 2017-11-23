@@ -14,7 +14,7 @@ get_header();
                 the_custom_logo();
                 //echo '<img src="'. esc_url( $logo[0] ) .'">';
         } else {
-                echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
+                echo '<a href="#" class="custom-logo-link"><h1 class="custom-logo">'. get_bloginfo( 'name' ) .'</h1></a>';
         }
     ?>
 </div>

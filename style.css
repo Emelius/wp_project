@@ -93,6 +93,7 @@ header ul li a:hover {
     position: absolute;
     width: 256px;
     height: auto;
+    color: #ffffff;
 }
 
 /************ Main **************/
@@ -150,6 +151,7 @@ footer h6 {
 @media (min-width: 750px) {
     .custom-logo {
         width: 512px;
+        font-size: 64px;
     }
 }
 
