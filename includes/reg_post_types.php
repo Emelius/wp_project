@@ -20,7 +20,6 @@ function event_post_type() {
         'query_var'           => 'event',
         'capability_type'     => 'post',
         'map_meta_cap'        => true,
-        ),
         
         'rewrite' => array(
       		'slug'                  => 'event',
@@ -81,7 +80,8 @@ function news_post_type() {
         'has_archive'         => 'news',
         'query_var'           => 'news',
         'capability_type'     => 'post',
-        'map_meta_cap'        => true,    
+        'map_meta_cap'        => true,
+        
         'rewrite' => array(
       		'slug'                  => 'news',
       		'with_front'            => false,
@@ -141,8 +141,6 @@ function members_post_type() {
         'query_var'           => 'members', // bool|string (defaults to TRUE - post type name)
         'capability_type'     => 'post', // string|array (defaults to 'post')
         'map_meta_cap'        => true, // bool (defaults to FALSE)
-
-        ),
     
         'rewrite' => array(
       		'slug'                  => 'members',
