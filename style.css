@@ -131,7 +131,11 @@ textarea {
 	font-family:Arial, Helvetica, sans-serif;
 	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
 }
-
+.status{
+  display: inline-block;
+  width:459px;
+  margin:0 auto;
+  }
 #submit {
 	background-color: #0B6623;
   color: #fff;
