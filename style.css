@@ -40,13 +40,8 @@ h1 {
   font-weight:400;
 }
 
-header {
-
-}
-
 header ul {
   overflow: hidden;
-  background-color: black;
 }
 
 header li {
@@ -55,7 +50,7 @@ header li {
 }
 
 header ul li a {
-  color:white;
+  color: black;
   text-decoration: none;
   padding: 8px 4px;
   margin: 8px 4px;
@@ -65,6 +60,11 @@ header ul li a:hover {
   color: #faae49;
 }
 
+nav {}
+
+.menu {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 .bigLogo {
     position: relative;
@@ -135,7 +135,7 @@ main:after {
   padding-left: 16px;
 }
 
-#socialMediaOuter p{
+#socialMediaOuter a{
   margin:0 20px 0 10px;
   float:left;
 }
@@ -152,8 +152,17 @@ img.icon {
   width:20px;
 }
 
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover{
+  color: #faae49;
+}
+
 footer {
-    position: absolute;
+  position: absolute;
   text-align:center;
   color: white;
   width: 100%;
