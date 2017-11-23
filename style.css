@@ -12,7 +12,7 @@
 }
 
 html {
-    height: calc(100% - 32px);
+    height: calc(100%);
     /*height: calc(100% - 54px);*/
 }
 
