@@ -39,13 +39,8 @@ h1 {
   font-weight:400;
 }
 
-header {
-
-}
-
 header ul {
   overflow: hidden;
-  background-color: black;
 }
 
 header li {
@@ -54,7 +49,7 @@ header li {
 }
 
 header ul li a {
-  color:white;
+  color: black;
   text-decoration: none;
   padding: 8px 4px;
   margin: 8px 4px;
@@ -64,6 +59,11 @@ header ul li a:hover {
   color: #faae49;
 }
 
+nav {}
+
+.menu {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 .bigLogo {
     position: relative;
