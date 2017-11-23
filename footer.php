@@ -4,9 +4,9 @@
 
   <div id="socialMediaOuter">
     <?php $uri =  get_template_directory_uri() ?>
-    <div class="socialInnerDiv"><img class="icon" src="<?php echo $uri ?>/images/facebookicon.png"><p>JSA Entrepreneurship Academy</p></div>
-    <div class="socialInnerDiv"><img class="icon" src="<?php echo $uri ?>/images/instaicon.png"><p>jibs_entrepreneurship</p></div>
-    <div class="socialInnerDiv"><img class="icon" src="<?php echo $uri ?>/images/emailicon.png"><p>entrepreneurship.jsa@js.ju.se</p></div>
+    <div class="socialInnerDiv"><img class="icon" src="<?php echo $uri ?>/images/facebookicon.png"><a href="https://www.facebook.com/JSAEntrepreneurshipAcademy/?ref=br_rs">JSA Entrepreneurship Academy</a></div>
+    <div class="socialInnerDiv"><img class="icon" src="<?php echo $uri ?>/images/instaicon.png"><a href="https://www.instagram.com/jibs_entrepreneurship/">jibs_entrepreneurship</a></div>
+    <div class="socialInnerDiv"><img class="icon" src="<?php echo $uri ?>/images/emailicon.png"><a>entrepreneurship.jsa@js.ju.se</a></div>
   </div>
 
   <h6>© JSA Entrepreneurship Academy</h6>

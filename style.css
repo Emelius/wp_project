@@ -112,7 +112,7 @@ main:after {
   padding-left: 16px;
 }
 
-#socialMediaOuter p{
+#socialMediaOuter a{
   margin:0 20px 0 10px;
   float:left;
 }
@@ -129,8 +129,17 @@ img.icon {
   width:20px;
 }
 
+footer a{
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover{
+  color: #faae49;
+}
+
 footer {
-    position: absolute;
+  position: absolute;
   text-align:center;
   color: white;
   width: 100%;
