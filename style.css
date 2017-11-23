@@ -22,6 +22,7 @@ body {
     /*margin-top: -54px;*/
     top: 0px;
     font-family: 'Nunito', sans-serif;
+    overflow-wrap: break-word;
 }
 
 #pageContainer {
@@ -96,6 +97,28 @@ header ul li a:hover {
     color: #ffffff;
 }
 
+/* Content */
+
+section {
+    margin: 8px;
+}
+
+.item {
+    border-bottom: 1px solid #808080;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+}
+.item > a, .item .attachment-grid_thumbnail {
+    display: block;
+}
+.item h3 a {
+    text-decoration: none;
+    color: #404040;
+}
+.item .text {
+    padding-top: 8px;
+}
+
 /************ Main **************/
 
 main:after {
@@ -153,6 +176,26 @@ footer h6 {
         width: 512px;
         font-size: 64px;
     }
+
+    section {
+        margin: 16px 48px;
+    }
+
+    .item {
+        overflow: hidden;
+        width: 600px;
+        padding-bottom: 8px;
+    }
+    #events .item > a {
+        float: left;
+    }
+    #events .item .text {
+        float: left;
+        width: 300px;
+        padding: 16px;
+        padding-top: 0px;
+        box-sizing: border-box;
+    }
 }
 
 @media (min-width: 1100px) {
@@ -162,5 +205,17 @@ footer h6 {
 
     .custom-logo-link {
         bottom: 0px;
+    }
+}
+
+@media (min-width: 1250px) {
+    #news, #events {
+        overflow: hidden;
+    }
+    .item {
+        float: left;
+        border: none;
+        margin: 16px -16px;
+        padding: 0px 16px;
     }
 }
