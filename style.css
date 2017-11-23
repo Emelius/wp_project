@@ -22,7 +22,7 @@ body {
     /*margin-top: -54px;*/
     top: 0px;
     font-family: 'Nunito', sans-serif;
-    overflow-wrap: break-word;
+    display: block;
 }
 
 #pageContainer {
@@ -96,29 +96,55 @@ nav {}
     height: auto;
     color: #ffffff;
 }
-
-/* Content */
-
-section {
-    margin: 8px;
+/************Contact Form**********/
+form {
+	width:459px;
+	margin:0 auto;
 }
 
-.item {
-    border-bottom: 1px solid #808080;
-    margin-bottom: 16px;
-    padding-bottom: 8px;
-}
-.item > a, .item .attachment-grid_thumbnail {
-    display: block;
-}
-.item h3 a {
-    text-decoration: none;
-    color: #404040;
-}
-.item .text {
-    padding-top: 8px;
+label {
+	display:block;
+	margin-top:20px;
+	letter-spacing:2px;
 }
 
+input, textarea {
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+}
+
+	input:focus, textarea:focus {
+		border:1px solid #97d6eb;
+	}
+
+textarea {
+	height:213px;
+	font-family:Arial, Helvetica, sans-serif;
+	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+}
+
+#submit {
+	background-color: #0B6623;
+  color: #fff;
+	width:127px;
+	height:38px;
+	border:none;
+	margin-top:20px;
+	cursor:pointer;
+}
+
+	#submit:hover {
+		opacity:0.9;
+	}
 /************ Main **************/
 
 main:after {
@@ -185,26 +211,6 @@ footer h6 {
         width: 512px;
         font-size: 64px;
     }
-
-    section {
-        margin: 16px 48px;
-    }
-
-    .item {
-        overflow: hidden;
-        width: 600px;
-        padding-bottom: 8px;
-    }
-    #events .item > a {
-        float: left;
-    }
-    #events .item .text {
-        float: left;
-        width: 300px;
-        padding: 16px;
-        padding-top: 0px;
-        box-sizing: border-box;
-    }
 }
 
 @media (min-width: 1100px) {
@@ -214,17 +220,5 @@ footer h6 {
 
     .custom-logo-link {
         bottom: 0px;
-    }
-}
-
-@media (min-width: 1250px) {
-    #news, #events {
-        overflow: hidden;
-    }
-    .item {
-        float: left;
-        border: none;
-        margin: 16px -16px;
-        padding: 0px 16px;
     }
 }
