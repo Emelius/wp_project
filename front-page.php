@@ -5,7 +5,7 @@ get_header();
 <div class="bigLogo">
     <?php $uri =  get_template_directory_uri() ?>
 
-    <img class="logoBackground" src="<?php echo $uri ?>/images/groupPhoto.jpg">
+    <img class="logoBackground" src="<?php echo $uri ?>/images/groupPhotoBW.jpg">
 
     <?php
         $custom_logo_id = get_theme_mod( 'custom_logo' );
