@@ -251,7 +251,7 @@ function news_post_type() {
          * The css-string for the icon to use for the admin menu item.
          * https://developer.wordpress.org/resource/dashicons
          */
-        'menu_icon'           => 'dashicons-portfolio', // string (defaults to use the post icon)
+        'menu_icon'           => 'dashicons-format-aside', // string (defaults to use the post icon)
 
         /**
          * Whether the posts of this post type can be exported via the WordPress import/export plugin
