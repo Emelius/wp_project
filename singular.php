@@ -1,4 +1,3 @@
-this is the singular
 <?php
   get_header();
 ?>
