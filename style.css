@@ -97,6 +97,13 @@ nav {}
     height: auto;
     color: #ffffff;
 }
+
+/********* Front page ***********/
+
+#welcome{
+  list-style:none;
+}
+
 /*********single post***********/
 
 /************Contact Form**********/

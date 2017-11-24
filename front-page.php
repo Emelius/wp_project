@@ -44,9 +44,10 @@ get_header();
     }
 ?>
 
-<section id="about">
-    <h2>About Entrepreneurship Academy</h2>
-    <p>wwwwwwwwwwwwww</p>
+<section id="welcome">
+    <aside>
+      <?php dynamic_sidebar ('site-description'); ?>
+    </aside>
 </section>
 <section id="news">
     <h2>News</h2>
