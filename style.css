@@ -12,7 +12,7 @@
 }
 
 html {
-    height: calc(100%);
+    height: calc(100% - 32px);
     /*height: calc(100% - 54px);*/
 }
 
@@ -23,6 +23,7 @@ body {
     top: 0px;
     font-family: 'Nunito', sans-serif;
     display: block;
+    overflow: hidden;
 }
 
 #pageContainer {
@@ -96,6 +97,8 @@ nav {}
     height: auto;
     color: #ffffff;
 }
+/*********single post***********/
+
 /************Contact Form**********/
 form {
 	width:459px;
@@ -155,27 +158,6 @@ main:after {
     display: block;
     content: "";
     height: calc(196px + 54px);
-}
-
-/************ Teams and members **************/
-
-.teamDiv {
-  text-align: center;
-}
-
-.memberDiv{
-  display: inline;
-  width: auto;
-  margin: 30px;
-  text-align: center;
-}
-
-.memberDiv img{
-  border-radius:50%;
-  width: 20%;
-  height: 20%;
-  margin:0;
-    display: inline;
 }
 
 /************ Footer ************/
