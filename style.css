@@ -159,6 +159,26 @@ main:after {
     content: "";
     height: calc(196px + 54px);
 }
+/************ Teams and members **************/
+
+.teamDiv {
+  text-align: center;
+}
+
+.memberDiv{
+  display: inline;
+  width: auto;
+  margin: 30px;
+  text-align: center;
+}
+
+.memberDiv img{
+  border-radius:50%;
+  width: 20%;
+  height: 20%;
+  margin:0;
+    display: inline;
+}
 
 /************ Footer ************/
 
