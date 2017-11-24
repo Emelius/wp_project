@@ -7,7 +7,7 @@ this is the singular
       while ( have_posts() ) {
         the_post();
       ?><figure class="header_img">
-          <?php<img src="" alt="">
+          <img src="" alt="">
         </figure>
       <article class="">
         <h1><?php the_title();?></h1>
