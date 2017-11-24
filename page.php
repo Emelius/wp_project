@@ -1,7 +1,8 @@
+
 <?php
 get_header();
 ?>
-
+this is a a page
 <?php
   if( have_posts() ) {
     while ( have_posts() ){

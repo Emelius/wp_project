@@ -12,7 +12,7 @@
 }
 
 html {
-    height: calc(100% - 32px);
+     height: calc(100% - 32px);
     /*height: calc(100% - 54px);*/
 }
 
@@ -104,7 +104,6 @@ nav {}
 }
 
 /*********single post***********/
-
 /************Contact Form**********/
 form {
 	width:459px;
@@ -185,7 +184,6 @@ main:after {
   margin:0;
     display: inline;
 }
-
 /************ Footer ************/
 
 #socialMediaOuter {
