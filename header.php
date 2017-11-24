@@ -13,11 +13,7 @@
 
     <div id="header_wrap">
         <header>
-          <nav>
-            <ul>
             <?php wp_nav_menu( array( 'theme_location' => 'header-nav' ) );?>
-            </ul>
-          </nav>
         </header>
 
     </div>
