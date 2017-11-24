@@ -11,6 +11,7 @@ this is the singular
         <h1><?php the_title();?></h1>
         <p class="article_body">
           <?php the_content(); ?>
+          <a href="<?php the_permalink() ?>"><?php the_post_thumbnail("grid_thumbnail"); ?></a>
         </p>
       </article>
     </section>
