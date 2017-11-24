@@ -1,11 +1,11 @@
 <?php
  function add_widgets() {
   $args = array(
-    'id'            => 'page-sidebar',
+    'id'            => 'site-description',
     /** Visible name in the Admin Dashboard Widget page */
-    'name'          => __( 'Page sidebar', 'EAcademy' ),
+    'name'          => __( 'Site description', 'EAcademy' ),
     /** Visible description in the Admin Dashboard Widget page */
-    'description'   => __( 'A page sidebar', 'EAcademy' ),
+    'description'   => __( 'A site description or welcome message', 'EAcademy' ),
 
     // /** HTML to wrap widget title in  */
     // 'before_title'  => '<p class="widget-title">',
