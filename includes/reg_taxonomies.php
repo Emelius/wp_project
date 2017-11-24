@@ -23,7 +23,7 @@ function create_team() {
     'show_tagcloud'              => true,
     'query_var'                  => 'team',
   );
-  register_taxonomy( 'Team', array('members'), $args );
+  register_taxonomy( 'team', array('members'), $args );
 
 }
 
