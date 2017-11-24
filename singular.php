@@ -6,9 +6,7 @@ this is the singular
     <?php if( have_posts() ) {
       while ( have_posts() ) {
         the_post();
-      ?><figure class="header_img">
-          <img src="" alt="">
-        </figure>
+      ?><div class="header_img" style="width:100%;background-image: url(<?php get_the_post_thumbnail()?>);"></div>
       <article class="">
         <h1><?php the_title();?></h1>
         <p class="article_body">

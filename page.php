@@ -1,7 +1,8 @@
+
 <?php
 get_header();
 ?>
-
+this is a a page
 <?php
     $terms = get_terms(array(
         "taxonomy" => "team"
