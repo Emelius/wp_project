@@ -10,7 +10,7 @@ this is the singular
           <?php<img src="" alt="">
         </figure>
       <article class="">
-        <h1><?php the title();?></h1>
+        <h1><?php the_title();?></h1>
         <p class="article_body">
           <?php the_content(); ?>
         </p>
