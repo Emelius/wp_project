@@ -187,12 +187,12 @@ section{
   /*width: 100%;*/
 }
 article{
-  margin: 40px 0 0 0;
-  padding: 0 20px 0 60px;
+  margin: 40px 0 0;
+  padding: 40px;
   text-align: left;
-  width: 60%;
+  width: 100%;
+  max-width:600px;
   float: left;
-  border-right: solid 2px #d6d6d6;
 }
 .bottom_line{
   margin: 30px 0;
@@ -208,7 +208,6 @@ article{
   height: 100%;
 }
 .author{
-  padding: 0 60px;
 }
 .sidelist{
   margin: 40px 20px;
