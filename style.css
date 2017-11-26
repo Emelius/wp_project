@@ -71,23 +71,32 @@ header ul li a:hover {
   color: #faae49;
 }
 
+header ul > li {
+    position: relative;
+}
 header ul > li > ul {
-  display: block;
-  position: relative;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+}
+
+header ul > li:hover > ul {
+    display: inline-block;
 }
 
 header ul > li > ul li {
-  display: none;
-  position: relative;
+    background-color: #ffffff;
 }
 
 header ul > li:hover > ul li {
-  display: block;
+  display: inline-block;
 }
 
 .bigLogo {
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 
 .logoBackground {
