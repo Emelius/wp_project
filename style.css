@@ -35,6 +35,7 @@ a {
   font-family: 'Nunito', sans-serif;
   font-weight: 300;
   color: ;
+  transition: color 0.2s ease;
 }
 
 a:hover {
@@ -90,7 +91,7 @@ header ul > li > ul li {
 }
 
 header ul > li:hover > ul li {
-  display: inline-block;
+  display: block;
 }
 
 .bigLogo {
