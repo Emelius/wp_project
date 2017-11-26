@@ -51,7 +51,6 @@ a:hover {
 
 header ul {
   text-align:center;
-  overflow: hidden;
 }
 
 header li {
@@ -65,6 +64,7 @@ header ul li a {
   text-decoration: none;
   padding: 8px 4px;
   margin: 8px 4px;
+  display: inline-block;
 }
 
 header ul li a:hover {
@@ -72,11 +72,17 @@ header ul li a:hover {
 }
 
 header ul > li > ul {
-  display: none;
+  display: block;
+  position: relative;
 }
 
-header ul > li:hover > ul {
-  display: inline-block;
+header ul > li > ul li {
+  display: none;
+  position: relative;
+}
+
+header ul > li:hover > ul li {
+  display: block;
 }
 
 .bigLogo {
