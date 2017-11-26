@@ -12,7 +12,7 @@
 }
 
 html {
-     height: calc(100% - 32px);
+     height: calc(100%);
     /*height: calc(100% - 54px);*/
 }
 
@@ -137,6 +137,44 @@ header ul > li:hover > ul li {
 .item a{
   text-decoration:none;
   color: black;
+}
+
+.item {
+    border-bottom: 1px solid #808080;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+}
+
+.item > a, .item .attachment-grid_thumbnail {
+    display: block;
+}
+
+.item h3 a {
+    text-decoration: none;
+    color: #404040;
+}
+.item .text {
+    padding-top: 8px;
+}
+
+section {
+    margin: 16px 48px;
+}
+
+.item {
+    overflow: hidden;
+    width: 600px;
+    padding-bottom: 8px;
+}
+#events .item > a {
+    float: left;
+}
+#events .item .text {
+    float: left;
+    width: 300px;
+    padding: 16px;
+    padding-top: 0px;
+    box-sizing: border-box;
 }
 
 /*********single post***********/
@@ -287,5 +325,17 @@ footer h6 {
 
     .custom-logo-link {
         bottom: 0px;
+    }
+}
+
+@media (min-width: 1250px) {
+    #news, #events {
+        overflow: hidden;
+    }
+    .item {
+        float: left;
+        border: none;
+        margin: 16px -16px;
+        padding: 0px 16px;
     }
 }
