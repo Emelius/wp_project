@@ -53,6 +53,7 @@ get_header();
         showcase("news");
     ?>
 </section>
+<script src="<?php echo get_template_directory_uri() ?>/js/slider.js"></script>
 <section id="events">
     <h2>Events</h2>
     <?php

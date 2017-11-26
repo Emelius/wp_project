@@ -163,8 +163,29 @@ section {
 
 .item {
     overflow: hidden;
-    width: 600px;
+    width: calc(100% - 24px);
     padding-bottom: 8px;
+}
+#news h2, #events h2 {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+#news h2 {
+    color: #f0c000;
+}
+#news {
+    position: relative;
+    height: 800px;
+    background-color: #202020;
+}
+#news .item {
+    position: absolute;
+    left: 200%;
+    transform: translateX(-50%);
+    background-color: #e0e0e0;
+    padding: 24px;
+    box-sizing: border-box;
 }
 #events .item > a {
     float: left;
@@ -348,6 +369,11 @@ footer h6 {
 
 /************ Responsive ************/
 
+@media (min-width: 624px) {
+    .item {
+        width: 600px;
+    }
+}
 @media (min-width: 750px) {
     .custom-logo {
         width: 512px;
