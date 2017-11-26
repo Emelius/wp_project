@@ -1,26 +1,35 @@
+
 <?php
   get_header();
 ?>
   <section>
+
     <?php if( have_posts() ) {
       while ( have_posts() ) {
         the_post();
-      ?><div class="header_img" style="width:100%;background-image: url(<?php get_the_post_thumbnail()?>);"></div>
-      <article class="">
-        <h1><?php the_title();?></h1>
+      ?>
+      <div class="img_cont">
+        <div class="header_img">
+          <?php the_post_thumbnail();?>
+        </div>
+
+      </div>
+      <article>
+        <h1 class="single_h1"><?php the_title();?></h1>
         <p class="article_body">
           <?php the_content(); ?>
-          <a href="<?php the_permalink() ?>"><?php the_post_thumbnail("grid_thumbnail"); ?></a>
         </p>
+        <hr class="bottom_line"/>
       </article>
+      <aside class="sidelist">
+        <h2>More news: </h2>
+      </aside>
     </section>
-    <aside class="">
-      <div class="author">
-        <figure class="author_pic">
-          <img src="" alt="">
-        </figure>
+    <div class="author">
+      Author: <?php the_author(); ?>
       </div>
-    </aside>
+
+
       <?php
       }
     }
