@@ -96,22 +96,24 @@ header ul > li:hover > ul li {
 .bigLogo {
     position: relative;
     overflow: hidden;
-    z-index: -1;
 }
 
 .logoBackground {
+    display: block;
     width: 100%;
     margin-top: -18%;
+    filter: blur(2px);
+    z-index: -1;
 }
 
 .custom-logo-link {
     display: block;
     position: absolute;
     top: 0px;
-    bottom: 5px;
+    bottom: 0px;
     left: 0px;
     right: 0px;
-    background: rgba(255, 175, 50, 0.5);
+    background: rgba(80, 80, 80, 0.50);
 }
 
 .custom-logo {
@@ -141,12 +143,16 @@ header ul > li:hover > ul li {
 
 .item {
     border-bottom: 1px solid #808080;
+    border-right: 1px solid #808080;
     margin-bottom: 16px;
+    overflow: hidden;
+    width: calc(100% - 48px);
     padding-bottom: 8px;
+    background-color: #e0e0e0;
 }
 
 .item > a, .item .attachment-grid_thumbnail {
-    display: block;
+    /*display: block;*/
 }
 
 .item h3 a {
@@ -161,11 +167,6 @@ section {
     margin: 16px 48px;
 }
 
-.item {
-    overflow: hidden;
-    width: calc(100% - 24px);
-    padding-bottom: 8px;
-}
 #news h2, #events h2 {
     text-align: center;
     margin-top: 24px;
@@ -175,6 +176,7 @@ section {
     color: #f0c000;
 }
 #news {
+    overflow: hidden;
     position: relative;
     height: 800px;
     background-color: #202020;
@@ -183,19 +185,38 @@ section {
     position: absolute;
     left: 200%;
     transform: translateX(-50%);
-    background-color: #e0e0e0;
     padding: 24px;
     box-sizing: border-box;
 }
+#events {
+    text-align: center;
+}
+#events > div {
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+#events .item {
+    margin: 24px;
+    padding: 24px;
+    display: inline-block;
+    text-align: center;
+}
 #events .item > a {
-    float: left;
+    display: inline-block;
+}
+#events .item img {
+    display: inline-block;
 }
 #events .item .text {
-    float: left;
+    display: inline-block;
     width: 300px;
     padding: 16px;
     padding-top: 0px;
     box-sizing: border-box;
+}
+#events .item .text p {
+    text-align: left;
 }
 
 /*********single post***********/
@@ -367,8 +388,17 @@ footer h6 {
     font-weight:300;
 }
 
+html #wpadminbar {
+    top: -46px;
+}
+
 /************ Responsive ************/
 
+@media (min-width: 602px) {
+    html #wpadminbar {
+        top: 0px;
+    }
+}
 @media (min-width: 624px) {
     .item {
         width: 600px;
@@ -396,9 +426,9 @@ footer h6 {
         overflow: hidden;
     }
     .item {
-        float: left;
+        /*float: left;*/
         border: none;
-        margin: 16px -16px;
-        padding: 0px 16px;
+        /*margin: 16px -16px;
+        padding: 0px 16px;*/
     }
 }

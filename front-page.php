@@ -56,9 +56,11 @@ get_header();
 <script src="<?php echo get_template_directory_uri() ?>/js/slider.js"></script>
 <section id="events">
     <h2>Events</h2>
-    <?php
-        showcase("event");
-    ?>
+    <div>
+        <?php
+            showcase("event");
+        ?>
+    </div>
 </section>
 
 <?php
