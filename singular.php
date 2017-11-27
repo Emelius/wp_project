@@ -2,7 +2,6 @@
 <?php
   get_header();
 ?>
-  <section>
     this is singular
     <?php if( have_posts() ) {
       while ( have_posts() ) {
@@ -14,6 +13,7 @@
         </div>
 
       </div>
+    <section>
       <article>
         <h1 class="single_h1"><?php the_title();?></h1>
         <p class="article_body">
@@ -27,7 +27,8 @@
       </article>
 
       <aside class="sidelist">
-        <h2>More news: </h2>
+        <h2>More <?php echo $post_type; ?> </h2>
+
       </aside>
     </section>
 
