@@ -21,7 +21,7 @@ get_header();
 </div>
 
 <?php
-    function showcase($item) {
+    function showcase($item, $imageSize) {
         $args = array(
             "post_type" => $item,
             "posts_per_page" => 4
@@ -33,7 +33,7 @@ get_header();
             while ($query->have_posts()) {
                 $query->the_post();
                 ?><div class="item"><?php
-                    ?><a href="<?php the_permalink() ?>"><?php the_post_thumbnail("grid_thumbnail"); ?></a><?php
+                    ?><a href="<?php the_permalink() ?>"><?php the_post_thumbnail($imageSize); ?></a><?php
                     ?><div class="text"><?php
                         ?><h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3><?php
                         the_excerpt();
@@ -50,15 +50,16 @@ get_header();
 <section id="news">
     <h2>News</h2>
     <?php
-        showcase("news");
+        showcase("news", "wide_thumbnail");
     ?>
 </section>
+
 <script src="<?php echo get_template_directory_uri() ?>/js/slider.js"></script>
 <section id="events">
     <h2>Events</h2>
     <div>
         <?php
-            showcase("event");
+            showcase("event", "large_grid_thumbnail");
         ?>
     </div>
 </section>
