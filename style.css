@@ -146,7 +146,7 @@ header ul > li:hover > ul li {
     border-right: 1px solid #808080;
     margin-bottom: 16px;
     overflow: hidden;
-    width: calc(100% - 48px);
+    width: calc(100% - 96px);
     padding-bottom: 8px;
     background-color: #e0e0e0;
 }
@@ -182,6 +182,7 @@ section {
     background-color: #202020;
 }
 #news .item {
+    width: calc(100% - 96px - 24px);
     position: absolute;
     left: 200%;
     transform: translateX(-50%);
@@ -190,6 +191,35 @@ section {
 #news img {
     width: 300px;
     height: initial;
+}
+.sliderArrow {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 48px;
+    width: 48px;
+    height: 100%;
+    background-color: #101010;
+    top: 0px;
+}
+.sliderArrow:hover {
+    color: #a0a0a0;
+    cursor: pointer;
+}
+.sliderArrow#previous{
+    left: 0px;
+}
+.sliderArrow#next{
+    right: 0px;
+}
+.sliderArrow span {
+    user-select: none;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 8px;
 }
 #events {
     text-align: center;
