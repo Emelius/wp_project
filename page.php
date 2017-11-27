@@ -1,4 +1,4 @@
-
+page.php
 <?php
 get_header();
 ?>
@@ -50,6 +50,7 @@ get_header();
             }
         }
     }
+    include 'partials/form.php';
 ?>
 
 <?php
