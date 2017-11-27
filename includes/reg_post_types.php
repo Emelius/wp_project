@@ -29,11 +29,7 @@ function event_post_type() {
       	),
         
         'supports' => array(
-            'title',
-            'editor',
-            'excerpt',
-            'thumbnail',
-            'custom-fields',
+            'editor'
         ),
         
         'labels' => array(
@@ -90,10 +86,7 @@ function news_post_type() {
       	),
 
         'supports' => array(
-            'title',
             'editor',
-            'excerpt',
-            'thumbnail',
         ),
 
         'labels' => array(
@@ -150,9 +143,7 @@ function members_post_type() {
       	),
 
         'supports' => array(
-            'title',
             'editor',
-            'thumbnail',
         ),
 
         'labels' => array(
