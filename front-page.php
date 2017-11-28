@@ -57,9 +57,9 @@ get_header();
                 ?><div class="item"><?php
                     ?><a href="<?php the_permalink() ?>"><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ $imageSize ]; echo $thumb; ?>"></a><?php
                     ?><div class="text"><?php
-                        ?><h3><a href="<?php the_permalink() ?>"><?php the_field('title'); ?></a></h3><?php
+                        ?><h3><a href="<?php the_permalink() ?>"><?php the_field('title'); ?></a></h3><p><?php
                         the_field('excerpt');
-                    ?></div>
+                    ?></p></div>
                 </div><?php
             }
         }
@@ -69,9 +69,12 @@ get_header();
 <section id="welcome">
       <?php dynamic_sidebar ('site-description'); ?>
 </section>
+<section>
+    <h2>News</h2>
+</section>
 
 <section id="news">
-    <h2>News</h2>
+    
     <?php
         slider("news", "wide_thumbnail");
     ?>

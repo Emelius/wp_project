@@ -2,7 +2,7 @@
 <?php
   get_header();
 ?>
-    this is singular
+    this is single
     <?php if( have_posts() ) {
       while ( have_posts() ) {
         the_post();
