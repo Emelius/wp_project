@@ -27,15 +27,27 @@ body {
     word-wrap: break-word;
 }
 
+section {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
+  text-align: left;
 }
 
 a {
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   transition: color 0.2s ease;
+  color: ;
 }
 
 a:hover {
@@ -132,10 +144,6 @@ header ul > li:hover > ul li {
 
 #welcome{
   list-style:none;
-  text-align:center;
-  font-size:20pt;
-  margin-top: 24px;
-  margin-bottom: 48px;
 }
 
 .item a{
@@ -144,36 +152,15 @@ header ul > li:hover > ul li {
 }
 
 .item {
-    /*border-bottom: 1px solid #808080;
-    border-right: 1px solid #808080;*/
-    margin-bottom: 16px;
     overflow: hidden;
     width: calc(100% - 96px);
-    padding-bottom: 8px;
-    background-color: #e0e0e0;
+    box-shadow: 3px 3px 40px #ccc;
 }
 
-.item > a, .item .attachment-grid_thumbnail {
-    /*display: block;*/
-}
-
-section {
-    margin: 16px 48px;
-}
-
-#news h2, #events h2 {
-    text-align: center;
-    margin-top: 24px;
-    margin-bottom: 12px;
-}
-#news h2 {
-    color: #f0c000;
-}
 #news {
     overflow: hidden;
     position: relative;
-    height: 800px;
-    background-color: #202020;
+    height: 600px;
 }
 #news .item {
     width: calc(100% - 96px - 24px);
@@ -190,15 +177,16 @@ section {
     display: block;
     position: absolute;
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
     font-size: 48px;
     width: 48px;
     height: 100%;
-    background-color: #101010;
+    background-color: white;
     top: 0px;
+    transition: color 0.2s ease;
 }
 .sliderArrow:hover {
-    color: #a0a0a0;
+    color: #faae49;
     cursor: pointer;
 }
 .sliderArrow#previous{
@@ -223,6 +211,7 @@ section {
     overflow: hidden;
     display: inline-block;
     text-align: center;
+    width: 100%;
 }
 #events .item {
     position: relative;
@@ -240,8 +229,7 @@ section {
 }
 #events .item .text {
     display: inline-block;
-    width: 300px;
-    padding: 24px;
+    padding: 24px 0 24px 24px;
     box-sizing: border-box;
 }
 #events .item .text p {
@@ -448,8 +436,8 @@ html #wpadminbar {
     }
     #events .item {
         /*float: left;*/
-        width: 600px;
-        height: 300px;
+        width: 400px;
+        height: 200px;
         margin: 24px;
         /*margin: 16px -16px;
         padding: 0px 16px;*/
@@ -457,6 +445,9 @@ html #wpadminbar {
     }
     #news {
         height: 600px;
+    }
+    #events > div {
+      margin: -24px;
     }
     #news .item {
         width: 600px;
@@ -475,10 +466,10 @@ html #wpadminbar {
       height: 300px;
     }
     .sliderArrow {
-        width: 192px;
+      
     }
     .sliderArrow span {
-        font-size: 96px;
+        font-size: 70px;
     }
 }
 
@@ -491,9 +482,6 @@ html #wpadminbar {
     }
     .custom-logo-link {
         bottom: 0px;
-    }
-    #welcome {
-        width: 750px;
     }
 }
 

@@ -69,6 +69,7 @@ get_header();
 <section id="welcome">
       <?php dynamic_sidebar ('site-description'); ?>
 </section>
+
 <section id="news">
     <h2>News</h2>
     <?php

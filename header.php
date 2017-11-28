@@ -9,14 +9,8 @@
     <?php wp_head(); ?>
   </head>
   <body>
-
   <div id="pageContainer">
-
-    <div id="header_wrap">
         <header>
             <?php wp_nav_menu( array( 'theme_location' => 'header-nav' ) );?>
         </header>
-
-    </div>
-
     <main>
