@@ -24,17 +24,17 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
     display: block;
+    word-wrap: break-word;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Nunito', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 a {
   font-family: 'Nunito', sans-serif;
-  font-weight: 300;
-  color: ;
+  font-weight: 400;
   transition: color 0.2s ease;
 }
 
@@ -134,6 +134,8 @@ header ul > li:hover > ul li {
   list-style:none;
   text-align:center;
   font-size:20pt;
+  margin-top: 24px;
+  margin-bottom: 48px;
 }
 
 .item a{
@@ -142,25 +144,17 @@ header ul > li:hover > ul li {
 }
 
 .item {
-    border-bottom: 1px solid #808080;
-    border-right: 1px solid #808080;
+    /*border-bottom: 1px solid #808080;
+    border-right: 1px solid #808080;*/
     margin-bottom: 16px;
     overflow: hidden;
-    width: calc(100% - 48px);
+    width: calc(100% - 96px);
     padding-bottom: 8px;
     background-color: #e0e0e0;
 }
 
 .item > a, .item .attachment-grid_thumbnail {
     /*display: block;*/
-}
-
-.item h3 a {
-    text-decoration: none;
-    color: #404040;
-}
-.item .text {
-    padding-top: 8px;
 }
 
 section {
@@ -182,6 +176,7 @@ section {
     background-color: #202020;
 }
 #news .item {
+    width: calc(100% - 96px - 24px);
     position: absolute;
     left: 200%;
     transform: translateX(-50%);
@@ -190,6 +185,36 @@ section {
 #news img {
     width: 300px;
     height: initial;
+}
+.sliderArrow {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 48px;
+    width: 48px;
+    height: 100%;
+    background-color: #101010;
+    top: 0px;
+}
+.sliderArrow:hover {
+    color: #a0a0a0;
+    cursor: pointer;
+}
+.sliderArrow#previous{
+    left: 0px;
+}
+.sliderArrow#next{
+    right: 0px;
+}
+.sliderArrow span {
+    user-select: none;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
 }
 #events {
     text-align: center;
@@ -216,7 +241,7 @@ section {
 #events .item .text {
     display: inline-block;
     width: 300px;
-    padding: 16px;
+    padding: 24px;
     box-sizing: border-box;
 }
 #events .item .text p {
@@ -226,7 +251,7 @@ section {
 /*********single post***********/
 .article_section{
   margin:auto;
-  max-width:1000px;
+  /*max-width:1000px;*/
   overflow: hidden;
 }
 .img_cont{
@@ -430,7 +455,13 @@ html #wpadminbar {
         padding: 0px 16px;*/
         position: relative;
     }
+    #news {
+        height: 600px;
+    }
     #news .item {
+        width: 600px;
+    }
+    #news .item img {
         width: 600px;
         height: initial;
     }
@@ -443,6 +474,12 @@ html #wpadminbar {
     .header_img{
       height: 300px;
     }
+    .sliderArrow {
+        width: 192px;
+    }
+    .sliderArrow span {
+        font-size: 96px;
+    }
 }
 
 @media (min-width: 1100px) {
@@ -454,6 +491,9 @@ html #wpadminbar {
     }
     .custom-logo-link {
         bottom: 0px;
+    }
+    #welcome {
+        width: 750px;
     }
 }
 

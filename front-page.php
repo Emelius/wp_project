@@ -42,6 +42,28 @@ get_header();
             }
         }
     }
+
+    function slider($item, $imageSize) {
+        $args = array(
+            "post_type" => $item,
+            "posts_per_page" => 4
+        );
+
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) {
+            while ($query->have_posts()) {
+                $query->the_post();
+                ?><div class="item"><?php
+                    ?><a href="<?php the_permalink() ?>"><?php the_post_thumbnail($imageSize); ?></a><?php
+                    ?><div class="text"><?php
+                        ?><h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3><?php
+                        the_excerpt();
+                    ?></div>
+                </div><?php
+            }
+        }
+    }
 ?>
 
 <section id="welcome">
@@ -50,11 +72,13 @@ get_header();
 <section id="news">
     <h2>News</h2>
     <?php
-        showcase("news", "wide_thumbnail");
+        slider("news", "wide_thumbnail");
     ?>
+    <div id="previous" class="sliderArrow" title="Previous"><span>&lt;</span></div>
+    <div id="next" class="sliderArrow" title="Next"><span>&gt;</span></div>
 </section>
-
 <script src="<?php echo get_template_directory_uri() ?>/js/slider.js"></script>
+
 <section id="events">
     <h2>Events</h2>
     <div>
