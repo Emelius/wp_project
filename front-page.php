@@ -4,8 +4,6 @@ get_header();
 ?>
 
 <div class="bigLogo">
-    <?php $uri = get_template_directory_uri() ?>
-
     <img class="logoBackground" src="<?php echo $uri ?>/images/groupPhotoBW.jpg">
 
     <?php
@@ -21,49 +19,7 @@ get_header();
 </div>
 
 <?php
-    function showcase($item, $imageSize) {
-        $args = array(
-            "post_type" => $item,
-            "posts_per_page" => 4
-        );
-
-        $query = new WP_Query($args);
-
-        if ($query->have_posts()) {
-            while ($query->have_posts()) {
-                $query->the_post();
-                ?><div class="item"><?php
-                    ?><a href="<?php the_permalink() ?>"><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ $imageSize ]; echo $thumb; ?>"></a><?php
-                    ?><div class="text"><?php
-                        ?><h3><a href="<?php the_permalink() ?>"><?php the_field('title'); ?></a></h3><?php
-                        the_field('excerpt');
-                    ?></div><?php
-                ?></div><?php
-            }
-        }
-    }
-
-    function slider($item, $imageSize) {
-        $args = array(
-            "post_type" => $item,
-            "posts_per_page" => 4
-        );
-
-        $query = new WP_Query($args);
-
-        if ($query->have_posts()) {
-            while ($query->have_posts()) {
-                $query->the_post();
-                ?><div class="item"><?php
-                    ?><a href="<?php the_permalink() ?>"><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ $imageSize ]; echo $thumb; ?>"></a><?php
-                    ?><div class="text"><?php
-                        ?><h3><a href="<?php the_permalink() ?>"><?php the_field('title'); ?></a></h3><?php
-                        the_field('excerpt');
-                    ?></div>
-                </div><?php
-            }
-        }
-    }
+    include("partials/renderFunctions.php");
 ?>
 
 <section id="welcome">

@@ -10,13 +10,11 @@
   </head>
   <body>
 
+    <?php $uri = get_template_directory_uri() ?>
+
   <div id="pageContainer">
-
-    <div id="header_wrap">
-        <header>
-            <?php wp_nav_menu( array( 'theme_location' => 'header-nav' ) );?>
-        </header>
-
-    </div>
+    <header>
+        <?php wp_nav_menu( array( 'theme_location' => 'header-nav' ) );?>
+    </header>
 
     <main>
