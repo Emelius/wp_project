@@ -224,7 +224,7 @@ section {
 }
 
 /*********single post***********/
-section{
+.article_section{
   margin:auto;
   max-width:1000px;
   overflow: hidden;
@@ -266,7 +266,9 @@ article{
   float: left;
   width: 300px;
 }
-
+.more .item .text{
+  width: 100%;
+}
 /************Contact Form**********/
 form {
 	width:459px;
