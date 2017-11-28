@@ -6,4 +6,5 @@
     include("includes/reg_post_types.php");
     include("includes/reg_taxonomies.php");
     include("includes/custom_fields.php");
+    include("includes/remove_post_post_type.php");
  ?>
