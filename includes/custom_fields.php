@@ -511,6 +511,67 @@ if(function_exists("register_field_group2"))
 		),
 		'menu_order' => 0,
 	));
+	register_field_group2(array (
+		'id' => 'acf_template-page',
+		'title' => 'Template Page',
+		'fields' => array (
+			array (
+				'key' => 'field_5a1dc8d253df9',
+				'label' => 'Text',
+				'name' => 'text',
+				'type' => 'text',
+				'instructions' => 'Text to be displayed on the page.',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_5a1dc8f653dfa',
+				'label' => 'Image',
+				'name' => 'image',
+				'type' => 'image',
+				'instructions' => 'Image to be displayed',
+				'save_format' => 'object',
+				'preview_size' => 'single_large',
+				'library' => 'all',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'default',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+				0 => 'permalink',
+				1 => 'the_content',
+				2 => 'excerpt',
+				3 => 'custom_fields',
+				4 => 'discussion',
+				5 => 'comments',
+				6 => 'revisions',
+				7 => 'slug',
+				8 => 'author',
+				9 => 'format',
+				10 => 'featured_image',
+				11 => 'categories',
+				12 => 'tags',
+				13 => 'send-trackbacks',
+			),
+		),
+		'menu_order' => 0,
+	));
 }
 
 
