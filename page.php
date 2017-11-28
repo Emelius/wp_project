@@ -10,7 +10,7 @@ get_header();
         <h2><?php the_title();?></h2>
         <p></p><?php
         the_field('text'); ?>
-        </p><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ 'large_grid_thumbnail' ]; echo $thumb; ?>">
+        </p><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ 'wide_thumbnail' ]; echo $thumb; ?>">
         <?php
       }
     }
