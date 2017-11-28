@@ -9,19 +9,10 @@
     <?php wp_head(); ?>
   </head>
   <body>
-<<<<<<< HEAD
-
-    <?php $uri = get_template_directory_uri() ?>
 
   <div id="pageContainer">
     <header>
         <?php wp_nav_menu( array( 'theme_location' => 'header-nav' ) );?>
     </header>
 
-=======
-  <div id="pageContainer">
-        <header>
-            <?php wp_nav_menu( array( 'theme_location' => 'header-nav' ) );?>
-        </header>
->>>>>>> ab175dae2267d3bec957501b254fd3c327602bd2
     <main>
