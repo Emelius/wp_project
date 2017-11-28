@@ -19,14 +19,64 @@ get_header();
 </div>
 
 <?php
+<<<<<<< HEAD
     include("partials/renderFunctions.php");
+=======
+    function showcase($item, $imageSize) {
+        $args = array(
+            "post_type" => $item,
+            "posts_per_page" => 4
+        );
+
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) {
+            while ($query->have_posts()) {
+                $query->the_post();
+                ?><div class="item"><?php
+                    ?><a href="<?php the_permalink() ?>"><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ $imageSize ]; echo $thumb; ?>"></a><?php
+                    ?><div class="text"><?php
+                        ?><h3><a href="<?php the_permalink() ?>"><?php the_field('title'); ?></a></h3><?php
+                        the_field('excerpt');
+                    ?></div><?php
+                ?></div><?php
+            }
+        }
+    }
+
+    function slider($item, $imageSize) {
+        $args = array(
+            "post_type" => $item,
+            "posts_per_page" => 4
+        );
+
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) {
+            while ($query->have_posts()) {
+                $query->the_post();
+                ?><div class="item"><?php
+                    ?><a href="<?php the_permalink() ?>"><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ $imageSize ]; echo $thumb; ?>"></a><?php
+                    ?><div class="text"><?php
+                        ?><h3><a href="<?php the_permalink() ?>"><?php the_field('title'); ?></a></h3><p><?php
+                        the_field('excerpt');
+                    ?></p></div>
+                </div><?php
+            }
+        }
+    }
+>>>>>>> ab175dae2267d3bec957501b254fd3c327602bd2
 ?>
 
 <section id="welcome">
       <?php dynamic_sidebar ('site-description'); ?>
 </section>
-<section id="news">
+<section>
     <h2>News</h2>
+</section>
+
+<section id="news">
+    
     <?php
         slider("news", "wide_thumbnail");
     ?>
