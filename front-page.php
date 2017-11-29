@@ -20,7 +20,6 @@ include("config.php");
 
 <?php
     include("partials/renderFunctions.php");
-
 ?>
 
 <section id="welcome">
