@@ -267,15 +267,9 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
-}
-
-?>
-
-<?php
-
-if(function_exists("register_field_group2"))
-{
-	register_field_group2(array (
+	
+	// pages
+	register_field_group(array (
 		'id' => 'acf_contact-page',
 		'title' => 'Contact Page',
 		'fields' => array (
@@ -336,7 +330,7 @@ if(function_exists("register_field_group2"))
 		),
 		'menu_order' => 0,
 	));
-	register_field_group2(array (
+	register_field_group(array (
 		'id' => 'acf_event-page',
 		'title' => 'Event Page',
 		'fields' => array (
@@ -374,7 +368,7 @@ if(function_exists("register_field_group2"))
 		),
 		'menu_order' => 0,
 	));
-	register_field_group2(array (
+	register_field_group(array (
 		'id' => 'acf_members-page',
 		'title' => 'Members Page',
 		'fields' => array (
@@ -412,7 +406,7 @@ if(function_exists("register_field_group2"))
 		),
 		'menu_order' => 0,
 	));
-	register_field_group2(array (
+	register_field_group(array (
 		'id' => 'acf_news-page',
 		'title' => 'News Page',
 		'fields' => array (
@@ -450,7 +444,7 @@ if(function_exists("register_field_group2"))
 		),
 		'menu_order' => 0,
 	));
-	register_field_group2(array (
+	register_field_group(array (
 		'id' => 'acf_organization-page',
 		'title' => 'Organization Page',
 		'fields' => array (
@@ -511,7 +505,7 @@ if(function_exists("register_field_group2"))
 		),
 		'menu_order' => 0,
 	));
-	register_field_group2(array (
+	register_field_group(array (
 		'id' => 'acf_template-page',
 		'title' => 'Template Page',
 		'fields' => array (
@@ -573,6 +567,5 @@ if(function_exists("register_field_group2"))
 		'menu_order' => 0,
 	));
 }
-
 
 ?>
