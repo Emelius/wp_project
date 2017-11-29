@@ -5,23 +5,30 @@ $(document).ready(function() {
     var counter = 0;
     var speed = 1000;
     var frequency = 20000;
-
-    for (var i = 0; i < arrows.length; i++) {
-        $(arrows[i]).click(function(e) {
-            e.preventDefault();
-            if (this.id == "previous") {
-                slide(slideCounter, "reverse");
-            } else if (this.id == "next") {
-                slide(slideCounter);
-            }
-        });
-    }
-
     var items = document.querySelectorAll("#news .item");
 
-    var slideCounter = 0;
+    if (items) {
+        for (var i = 0; i < arrows.length; i++) {
+            $(arrows[i]).click(function(e) {
+                e.preventDefault();
+                if (this.id == "previous") {
+                    slide(slideCounter, "reverse");
+                } else if (this.id == "next") {
+                    slide(slideCounter);
+                }
+            });
+        }
+    }
 
-    slide(slideCounter);
+    if (items && items.length <= 1) {
+        items[0].style.left = "50%";
+    } else if (items) {
+        var slideCounter = 0;
+
+        slide(slideCounter);
+
+        var autoSwitch = setInterval(function() {slide(slideCounter)}, frequency);
+    }
 
     function slide(id, direction) {
         date = new Date();
@@ -67,6 +74,4 @@ $(document).ready(function() {
             }
         }
     }
-
-    var autoSwitch = setInterval(function() {slide(slideCounter)}, frequency);
 });
