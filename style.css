@@ -114,42 +114,21 @@ header ul > li:hover > ul li {
   display: block;
 }
 
-.bigLogo {
-    position: relative;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.logoBackground {
-    display: block;
-    width: 100%;
-    margin-top: -18%;
-    filter: blur(2px);
-}
-
-.custom-logo-link {
-    display: block;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background: rgba(80, 80, 80, 0.50);
-}
-
-.custom-logo {
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    width: 256px;
-    height: auto;
-    color: #ffffff;
-    text-align:center;
-}
-
 /********* Front page ***********/
+
+.backgroundImage {
+  /* The image used */
+    background-image: url("images/groupPhotoBW.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* The parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #welcome{
   list-style:none;
@@ -466,10 +445,7 @@ html #wpadminbar {
     }
 }
 @media (min-width: 750px) {
-    .custom-logo {
-        width: 512px;
-        font-size: 64px;
-    }
+
     .header_img{
       height: 300px;
     }
@@ -482,15 +458,10 @@ html #wpadminbar {
 }
 
 @media (min-width: 1100px) {
-    .bigLogo {
-        height: 512px;
-    }
     .header_img{
       height: 600px;
     }
-    .custom-logo-link {
-        bottom: 0px;
-    }
+
 }
 
 @media (min-width: 1250px) {
