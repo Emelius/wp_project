@@ -351,6 +351,22 @@ main:after {
   margin:0;
     display: inline;
 }
+/************Contact****************/
+.left_box{
+  width: 50%;
+  display: inline-block;
+  float:left;
+  width: auto;
+}
+.text_box{
+  width: 500px;
+}
+.right_box{
+  float: left;
+}
+.right_box form{
+  margin:52px 60px 0 0;
+}
 /************ Footer ************/
 
 #socialMediaOuter {
