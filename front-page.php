@@ -25,7 +25,7 @@ include("config.php");
 ?>
 
 <section id="welcome">
-      <?php dynamic_sidebar ('site-description'); ?>
+      <h1><?php dynamic_sidebar ('site-description'); ?></h1>
 </section>
 <section>
     <h2>News</h2>
