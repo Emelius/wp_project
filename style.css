@@ -134,6 +134,14 @@ header ul > li:hover > ul li {
   list-style:none;
 }
 
+#welcome h2 {
+  text-align:center;
+}
+
+#welcome p {
+  font-weight:300;
+}
+
 .item a{
   text-decoration:none;
   color: black;

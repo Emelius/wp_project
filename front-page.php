@@ -25,10 +25,10 @@ include("config.php");
 ?>
 
 <section id="welcome">
-      <h1><?php dynamic_sidebar ('site-description'); ?></h1>
+  <?php dynamic_sidebar ('site-description'); ?>
 </section>
 <section>
-    <h2>News</h2>
+  <h2>News</h2>
 </section>
 
 <section id="news">
