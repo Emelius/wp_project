@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-archive-members.php
+members-archive.php
 <?php
   if( have_posts() ) {
     while ( have_posts() ){
