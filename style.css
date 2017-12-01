@@ -21,10 +21,14 @@ body {
     margin: 0px;
     /*margin-top: -54px;*/
     top: 0px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     display: block;
     word-wrap: break-word;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 section {
@@ -471,7 +475,7 @@ html #wpadminbar {
       height: 300px;
     }
     .sliderArrow {
-      
+
     }
     .sliderArrow span {
         font-size: 70px;
