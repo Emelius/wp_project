@@ -1,3 +1,4 @@
+
 </main>
 <footer>
 
@@ -8,7 +9,7 @@
     <div class="socialInnerDiv"><a href="https://www.instagram.com/jibs_entrepreneurship/"><img class="icon" src="<?php echo $uri ?>/images/instaicon.png"></a></div>
   </div>
 
-  <p>© JSA Entrepreneurship Academy</p>
+  <p>JSA Entrepreneurship Academy</p>
 
 </footer>
 <?php wp_footer()?>
