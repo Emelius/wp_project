@@ -20,18 +20,18 @@ function event_post_type() {
         'query_var'           => 'event',
         'capability_type'     => 'post',
         'map_meta_cap'        => true,
-        
+
         'rewrite' => array(
       		'slug'                  => 'event',
       		'with_front'            => false,
       		'pages'                 => true,
       		'feeds'                 => false,
       	),
-        
+
         'supports' => array(
             'editor'
         ),
-        
+
         'labels' => array(
             'name'               => __( 'Events',                   'event-textdomain' ),
             'singular_name'      => __( 'Event',                    'event-textdomain' ),
@@ -77,7 +77,7 @@ function news_post_type() {
         'query_var'           => 'news',
         'capability_type'     => 'post',
         'map_meta_cap'        => true,
-        
+
         'rewrite' => array(
       		'slug'                  => 'news',
       		'with_front'            => false,
@@ -134,7 +134,7 @@ function members_post_type() {
         'query_var'           => 'members', // bool|string (defaults to TRUE - post type name)
         'capability_type'     => 'post', // string|array (defaults to 'post')
         'map_meta_cap'        => true, // bool (defaults to FALSE)
-    
+
         'rewrite' => array(
       		'slug'                  => 'members',
       		'with_front'            => false,
@@ -144,6 +144,7 @@ function members_post_type() {
 
         'supports' => array(
             'editor',
+            'title'
         ),
 
         'labels' => array(
