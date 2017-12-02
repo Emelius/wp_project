@@ -84,7 +84,7 @@ header {
   text-align: center;
 }
 
-.menu-page-menu-container {
+.-page-menu-container {
     display: inline-block;
     max-width: 960px;
 }
@@ -284,8 +284,7 @@ article{
   padding: 20px;
   text-align: left;
   width: 100%;
-  max-width:600px;
-
+  max-width:668px;
   float: left;
 }
 .bottom_line{
@@ -505,12 +504,35 @@ html #wpadminbar {
 
 /************ Responsive ************/
 
+@media (min-width: 500px) {
+  article {
+      padding: 0px;
+      max-width:450px;
+  }
+  .item {
+      width: 300px;
+  }
+}
+
 @media (min-width: 602px) {
+  header ul li a {
+    padding: 5px 10px;
+  }
+
     html #wpadminbar {
         top: 0px;
     }
+
+    .item {
+        width: 400px;
+    }
 }
 @media (min-width: 648px) {
+
+  header ul li a {
+    padding: 5px 30px;
+  }
+
     .item {
         width: 600px;
     }
@@ -540,8 +562,17 @@ html #wpadminbar {
         width: 600px;
         height: initial;
     }
+
+    article {
+        padding: 0px;
+        max-width:668px;
+    }
+
 }
 @media (min-width: 750px) {
+  header ul li a {
+    padding: 7px 45px;
+  }
 
     .header_img{
       height: 300px;
@@ -549,8 +580,12 @@ html #wpadminbar {
     .sliderArrow span {
         font-size: 40px;
     }
+
+
+
     article {
         padding: 0px;
+        max-width:660px;
     }
 }
 
@@ -559,4 +594,8 @@ html #wpadminbar {
       height: 500px;
     }
 
+    article {
+        padding: 0px;
+        max-width:668px;
+    }
 }
