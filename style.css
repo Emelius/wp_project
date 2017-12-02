@@ -6,7 +6,7 @@
 
 /*
     Footer height: 196px;
-    Orange colour: #f09000 (#faae49 previously)
+    Orange colour: #faae49
 */
 
 /************** General *****************/
@@ -32,20 +32,16 @@ body {
     word-wrap: break-word;
 }
 
-h1,h2,h3,h4,h5{
-  font-family: 'Didact Gothic', sans-serif;
-}
-
 section {
   max-width: 960px;
   margin: 0 auto;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   font-weight: 400;
   text-align: left;
-  margin: 24px 0;
+  margin: 24px 0 0 0;
 }
 
 p {
@@ -53,14 +49,14 @@ p {
 }
 
 a {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 300;
   transition: color 0.2s ease;
-  color: #f09000;
+  color: #faae49;
 }
 
 a:hover {
-  color: #c07000;
+  color: #faae49;
 }
 
 #pageContainer {
@@ -107,12 +103,12 @@ header li {
 header ul li a {
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 60px;
   display: inline-block;
 }
 
 header ul li a:hover {
-  color: #f09000;
+  color: #faae49;
 }
 header ul.menu > li:hover:before, header ul.menu > li.current-menu-item:before {
     content: "";
@@ -221,7 +217,7 @@ header ul > li > ul > li {
     transition: color 0.2s ease;
 }
 .sliderArrow:hover {
-    color: #f09000;
+    color: #faae49;
     cursor: pointer;
 }
 .sliderArrow#previous{
@@ -312,7 +308,24 @@ article{
 .more .item .text{
   width: 100%;
 }
-/************Contact Form**********/
+/***************************Contact *************************/
+
+.left_box{
+  width: 50%;
+  display: inline-block;
+  float:left;
+  width: auto;
+}
+.text_box{
+  width: 500px;
+}
+.right_box{
+  display: inline-block;
+}
+.right_box form{
+  margin:52px 60px 0 0;
+}
+
 form {
 	width:459px;
 	margin:0 auto;
@@ -321,39 +334,39 @@ form {
 label {
 	display:block;
 	margin-top:20px;
-	letter-spacing:2px;
 }
 
 input, textarea {
-	width:439px;
-	height:27px;
-	background:#efefef;
-	border-radius:5px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border:1px solid #dedede;
-	padding:10px;
-	margin-top:3px;
-	font-size:0.9em;
-	color:#3a3a3a;
-}
+/*Remove all standard form styling*/
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 
-	input:focus, textarea:focus {
-		border:1px solid #97d6eb;
-	}
+/*Styling we want*/
+	font-weight: 100;
+	font-size: 10pt;
+	border-bottom: 1px solid #000;
+	width: 100%;
+	padding: 10px 0px;
+	box-sizing: border-box;
+}
 
 textarea {
 	height:213px;
-	font-family:Arial, Helvetica, sans-serif;
-	background:url(images/textarea-bg.jpg) right no-repeat #efefef;
+  border:solid 1px #000;
 }
+
 .status{
   display: inline-block;
   width:459px;
   margin:0 auto;
   }
+
 #submit {
-	background-color: #0B6623;
+	background-color: #faae49;
   color: #fff;
 	width:127px;
 	height:38px;
@@ -363,8 +376,10 @@ textarea {
 }
 
 	#submit:hover {
-		opacity:0.9;
+    transition: color 0.2s ease;
+    background-color: #000;
 	}
+
 /************ Main **************/
 main{
   overflow: hidden;
@@ -398,22 +413,7 @@ main:after {
     text-decoration: none;
     color: #000000;
 }
-/************Contact****************/
-.left_box{
-  width: 50%;
-  display: inline-block;
-  float:left;
-  width: auto;
-}
-.text_box{
-  width: 500px;
-}
-.right_box{
-  display: inline-block;
-}
-.right_box form{
-  margin:52px 60px 0 0;
-}
+
 /************ Footer ************/
 
 #socialMediaOuter {
