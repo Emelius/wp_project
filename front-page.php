@@ -46,7 +46,7 @@
     <h2>Events</h2>
     <div>
         <?php
-            showcase("events", "large_grid_thumbnail");
+            showcase("event", "large_grid_thumbnail");
         ?>
     </div>
 </section>

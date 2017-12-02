@@ -18,13 +18,11 @@
 
 html {
      height: calc(100%);
-    /*height: calc(100% - 54px);*/
 }
 
 body {
     height: 100%;
     margin: 0px;
-    /*margin-top: -54px;*/
     top: 0px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -64,7 +62,7 @@ a:hover {
     min-height: 100%;
     margin-bottom: calc(-196px - 54px);
 }
-
+/***************** what is this ***************/
 .centralDisplay {
     text-align: center;
     position: absolute;
@@ -72,12 +70,13 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/**********************************************/
 
 .breadcrumbs {
     margin: 24px 0px;
 }
 
-/***************** Header ***************/
+/************************ Header ***********************/
 
 header {
   margin: 0 auto;
@@ -110,6 +109,7 @@ header ul li a {
 header ul li a:hover {
   color: #faae49;
 }
+
 header ul.menu > li:hover:before, header ul.menu > li.current-menu-item:before {
     content: "";
     display: block;
@@ -190,20 +190,24 @@ header ul > li > ul > li {
     position: relative;
     height: 400px;
 }
+
 .slider .item {
     position: absolute;
     left: 200%;
     transform: translate(-50%, -50%);
     top: 50%;
 }
+
 #news .item {
     padding: 24px;
     width: calc(100% - 96px - 24px);
 }
+
 #news img {
     width: 300px;
     height: initial;
 }
+
 .sliderArrow {
     display: block;
     position: absolute;
@@ -215,16 +219,20 @@ header ul > li > ul > li {
     top: 0px;
     transition: color 0.2s ease;
 }
+
 .sliderArrow:hover {
     color: #faae49;
     cursor: pointer;
 }
+
 .sliderArrow#previous{
     left: 0px;
 }
+
 .sliderArrow#next{
     right: 0px;
 }
+
 .sliderArrow span {
     user-select: none;
     display: block;
@@ -234,10 +242,12 @@ header ul > li > ul > li {
     width: 100%;
     text-align: center;
 }
+
 #events > div {
     display: inline-block;
     width: calc(100% + 48px);
 }
+
 #events .item {
     position: relative;
     margin: 24px 0px;
@@ -261,15 +271,13 @@ header ul > li > ul > li {
     text-align: left;
 }
 
-/*********single post***********/
+/**************************************single post***********/
 .article_section{
   margin:auto;
   /*max-width:1000px;*/
   overflow: hidden;
 }
 .img_cont{
-
-  /*width: 100%;*/
 }
 article{
   margin:0;
@@ -301,7 +309,6 @@ article{
 }
 .sidelist{
   margin: 40px 20px;
-  float: left;
   width: 300px;
 }
 .more .item .text{
