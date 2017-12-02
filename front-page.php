@@ -1,6 +1,6 @@
 <?php
-get_header();
-include("config.php");
+    get_header();
+    include("config.php");
 ?>
 
 <!-- <div class="bigLogo">
@@ -46,11 +46,11 @@ include("config.php");
     <h2>Events</h2>
     <div>
         <?php
-            showcase("event", "large_grid_thumbnail");
+            showcase("events", "large_grid_thumbnail");
         ?>
     </div>
 </section>
 
 <?php
-get_footer();
+    get_footer();
 ?>

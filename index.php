@@ -1,8 +1,7 @@
 <?php
-get_header();
-echo "this is the index";
+    get_header();
 ?>
-index.php
+
 <?php
-get_footer();
+    get_footer();
 ?>
