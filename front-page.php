@@ -21,7 +21,7 @@ include("config.php");
 <div class="backgroundImage"></div>
 
 <?php
-    include("partials/renderFunctions.php");
+    include("includes/render_functions.php");
 ?>
 
 <section id="welcome">

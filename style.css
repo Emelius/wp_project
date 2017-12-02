@@ -1,7 +1,7 @@
 /*
     Theme Name: EAcademy
-    Author: WP group 2
-    Description: Pls work
+    Author: Entrepreneurship Academy
+    Description: WordPress theme for Entrepreneurship Academy.
 */
 
 /************** General *****************/
@@ -370,7 +370,7 @@ main:after {
   width: 500px;
 }
 .right_box{
-  float: left;
+  display: inline-block;
 }
 .right_box form{
   margin:52px 60px 0 0;
