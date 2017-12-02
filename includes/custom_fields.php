@@ -8,7 +8,7 @@ if(function_exists("register_field_group"))
 		'fields' => array (
 			array (
 				'key' => 'field_5a1c1f4b843b6',
-				'label' => 'Title',
+				'label' => 'Event title',
 				'name' => 'title',
 				'type' => 'text',
 				'instructions' => 'Event title',
@@ -186,7 +186,7 @@ if(function_exists("register_field_group"))
 		'fields' => array (
 			array (
 				'key' => 'field_5a1c277cc9f2a',
-				'label' => 'Title',
+				'label' => 'News title',
 				'name' => 'title',
 				'type' => 'text',
 				'instructions' => 'News title',
@@ -267,7 +267,7 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
-	
+
 	// pages
 	register_field_group(array (
 		'id' => 'acf_contact-page',

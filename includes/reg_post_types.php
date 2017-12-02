@@ -143,8 +143,7 @@ function members_post_type() {
       	),
 
         'supports' => array(
-            'editor',
-            'title'
+            'editor'
         ),
 
         'labels' => array(
