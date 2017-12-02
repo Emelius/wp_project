@@ -17,7 +17,13 @@ archive.php
     ?>
 
     <section id="<?php echo $post_type ?>">
-        <h2><?php echo $post_type ?></h2>
+        <h2>
+            <?php
+                $post_label = $post_type;
+                $post_label[0] = strtoupper($post_label[0]);
+                echo $post_label;
+            ?>
+        </h2>
         <div>
             <?php showcase($post_type, $post_type == "news" ? "wide_thumbnail" : "large_grid_thumbnail"); ?>
         </div>

@@ -17,12 +17,12 @@ function event_post_type() {
         'delete_with_user'    => false,
         'hierarchical'        => false,
         'has_archive'         => 'events',
-        'query_var'           => 'event',
+        'query_var'           => 'events',
         'capability_type'     => 'post',
         'map_meta_cap'        => true,
 
         'rewrite' => array(
-      		'slug'                  => 'event',
+      		'slug'                  => 'events',
       		'with_front'            => false,
       		'pages'                 => true,
       		'feeds'                 => false,
@@ -50,7 +50,7 @@ function event_post_type() {
     );
 
     /* Register the post type. */
-    register_post_type('event',$args );
+    register_post_type('events',$args );
 }
 
 /* Register custom post types on the 'init' hook. */
