@@ -11,11 +11,7 @@
         </div>
       </div>
     <section class="article_section">
-        <div class="breadcrumbs">
-            <?php
-                bcn_display();
-            ?>
-        </div>
+        
       <article>
         <h1 class="single_h1"><?php the_field('title');?></h1>
         <p class="article_body">
