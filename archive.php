@@ -13,15 +13,15 @@ archive.php
     }*/
 
     include("includes/render_functions.php");
+    $post_type = get_post_type();
     ?>
 
-    <section id="events">
-        <h2>Events</h2>
+    <section id="<?php echo $post_type ?>">
+        <h2><?php echo $post_type ?></h2>
         <div>
-            <?php showcase("event", "large_grid_thumbnail"); ?>
+            <?php showcase($post_type, $post_type == "news" ? "wide_thumbnail" : "large_grid_thumbnail"); ?>
         </div>
     </section>
-?>
 
 <?php
 get_footer();

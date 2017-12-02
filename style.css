@@ -153,18 +153,21 @@ header ul > li:hover > ul li {
     box-shadow: 3px 3px 40px #ccc;
 }
 
-#news {
+.slider {
     overflow: hidden;
     position: relative;
     height: 400px;
 }
-#news .item {
-    width: calc(100% - 96px - 24px);
+.slider .item {
     position: absolute;
     left: 200%;
     transform: translate(-50%, -50%);
-    padding: 24px;
     top: 50%;
+}
+#news .item {
+    margin: 24px 0px;
+    padding: 24px;
+    width: calc(100% - 96px - 24px);
 }
 #news img {
     width: 300px;
@@ -454,7 +457,7 @@ html #wpadminbar {
         padding: 0px 16px;*/
         position: relative;
     }
-    #news {
+    .slider {
         height: 500px;
     }
     #events > div {
@@ -486,10 +489,4 @@ html #wpadminbar {
       height: 600px;
     }
 
-}
-
-@media (min-width: 1250px) {
-    #news {
-        overflow: hidden;
-    }
 }

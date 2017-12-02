@@ -31,14 +31,16 @@ include("config.php");
   <h2>News</h2>
 </section>
 
-<section id="news">
-    <?php
-        slider("news", "wide_thumbnail");
-    ?>
-    <div id="previous" class="sliderArrow" title="Previous"><span>&lt;</span></div>
-    <div id="next" class="sliderArrow" title="Next"><span>&gt;</span></div>
+<section class="slider">
+    <section id="news">
+        <?php
+            showcase("news", "wide_thumbnail");
+        ?>
+        <div id="previous" class="sliderArrow" title="Previous"><span>&lt;</span></div>
+        <div id="next" class="sliderArrow" title="Next"><span>&gt;</span></div>
+    </section>
+    <script src="<?php echo $uri ?>/js/slider.js"></script>
 </section>
-<script src="<?php echo $uri ?>/js/slider.js"></script>
 
 <section id="events">
     <h2>Events</h2>
