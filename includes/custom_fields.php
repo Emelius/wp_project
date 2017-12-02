@@ -274,20 +274,6 @@ if(function_exists("register_field_group"))
 		'title' => 'Contact Page',
 		'fields' => array (
 			array (
-				'key' => 'field_5a1dc203be5aa',
-				'label' => 'Page title',
-				'name' => 'title',
-				'type' => 'text',
-				'instructions' => 'Page title',
-				'required' => 1,
-				'default_value' => '',
-				'placeholder' => 'Title',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => 40,
-			),
-			array (
 				'key' => 'field_5a1dc203be5ab',
 				'label' => 'Text',
 				'name' => 'text',
