@@ -419,8 +419,13 @@ main:after {
 .member {
   display: inline;
   width: auto;
-  margin: 30px;
+  margin-left: 30px;
   text-align: center;
+}
+
+.memberText h3{
+  text-align: center;
+  width: 25%;
 }
 
 .member img {
@@ -428,7 +433,7 @@ main:after {
   width: 20%;
   height: 20%;
   margin:0;
-    display: inline;
+  display: inline;
 }
 .member a {
     text-decoration: none;

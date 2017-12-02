@@ -9,7 +9,7 @@
         ));
 
         foreach($terms as $term) {
-            echo "<h2>" . $term->name . "</h2>";
+            echo "<h2 class='team'>" . $term->name . "</h2>";
 
             $args = array(
                 "post_type" => "members",
@@ -30,7 +30,7 @@
                     $query->the_post();
                     ?><div class="member"><?php
                         ?><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ 'grid_thumbnail' ]; echo $thumb; ?>"><?php
-                        ?><div class="text"><?php
+                        ?><div class="memberText"><?php
                             ?><h3><?php the_field('name'); ?></h3></div><?php
                     ?></div><?php
                 }
