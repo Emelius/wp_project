@@ -50,7 +50,7 @@ function event_post_type() {
     );
 
     /* Register the post type. */
-    register_post_type('event',$args );
+    register_post_type('events',$args );
 }
 
 /* Register custom post types on the 'init' hook. */
