@@ -18,7 +18,7 @@
     ?>
 </div> -->
 
-<div class="backgroundImage"></div>
+<div class="backgroundImage"><h1>Entrepreneurship Academy</h1></div>
 
 <?php
     include("includes/render_functions.php");

@@ -159,6 +159,16 @@ header ul > li > ul > li {
     background-size: cover;
 }
 
+.backgroundImage h1 {
+  color:white;
+  font-size:70px;
+  margin-top:0;
+  position: absolute;
+  z-index: 1000;
+  top: 200px;
+  left: 250px;
+}
+
 #welcome{
   list-style:none;
 }
