@@ -1,6 +1,6 @@
 <?php
     function updateTitle($post_id) {
-        if ($post_type == "page") {
+        if ($post_type != "page") {
             $post_type = get_post_type($post_id);
 
             if ($post_type == "members") {
