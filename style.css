@@ -38,7 +38,6 @@ section {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Didact Gothic', sans-serif;
   font-weight: 400;
-  text-align: left;
   margin: 24px 0 0 0;
 }
 
@@ -472,9 +471,16 @@ img.icon:hover {
     filter: invert(50%) sepia(100%) saturate(8000%) hue-rotate(60deg) saturate(1000%);
 }
 
-footer a{
+footer h1 {
+  margin-top:0;
+}
+
+footer a h1{
   text-decoration: none;
   color: white;
+  font-size: 14px;
+  text-align:center;
+  width:100%;
 }
 
 footer a:hover{
@@ -491,11 +497,10 @@ footer {
   background-color: #101010;
 }
 
-footer p {
-    text-align: center;
-    margin-top: 16px;
-    font-size:10pt;
-    font-weight:300;
+.custom-logo {
+  margin-left:20px;
+  width:100px;
+  height:45px;
 }
 
 html #wpadminbar {

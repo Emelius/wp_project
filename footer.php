@@ -9,7 +9,17 @@
     <div class="socialInnerDiv"><a href="https://www.instagram.com/jibs_entrepreneurship/"><img class="icon" src="<?php echo $uri ?>/images/instaicon.png"></a></div>
   </div>
 
-  <p>JSA Entrepreneurship Academy</p>
+  <?php
+
+      $custom_logo_id = get_theme_mod( 'custom_logo' );
+      $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+      if ( has_custom_logo() ) {
+              ?> <div class="custom_logo"><?php the_custom_logo();?></div><?php
+            //  echo '<img src="'. esc_url( $logo[0] ) .'">';
+      } else {
+              echo '<a href="#"><h1>'. get_bloginfo( 'name' ) .'</h1></a>';
+      }
+  ?>
 
 </footer>
 <?php wp_footer()?>
