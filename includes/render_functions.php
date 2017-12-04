@@ -3,7 +3,7 @@
         $args = array(
             "post_type" => $item,
             "posts_per_page" => 4,
-            "paged" => get_query_var("paged")
+            "paged" => get_query_var("paged") ? get_query_var("paged") : 1
         );
 
         $query = new WP_Query($args);
@@ -19,6 +19,12 @@
                     ?></div><?php
                 ?></div><?php
             }
+        }
+
+        if (!is_front_page()) {
+            wp_pagenavi(array(
+                "query" => $query
+            ));
         }
     }
 ?>

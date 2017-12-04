@@ -6,8 +6,6 @@
             $classes[] = "current-menu-item";
         }
 
-        $classes[] = "post-type-" . $post->post_type;
-
         return $classes;
     }
 

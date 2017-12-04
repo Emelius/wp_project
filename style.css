@@ -289,6 +289,12 @@ header ul > li > ul > li {
 #events .item .text p {
     text-align: left;
 }
+#events .wp-pagenavi {
+    margin: 24px;
+}
+#events h2 {
+    margin: 24px 0px;
+}
 
 /**************************************single post***********/
 .article_section{
