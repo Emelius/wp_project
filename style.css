@@ -191,6 +191,11 @@ header ul > li > ul > li {
   font-weight:300;
 }
 
+/********* Låt mig vara :) ***********/
+#welcome h2 {
+  text-align:center;
+}
+
 .item a{
   text-decoration:none;
   color: black;
