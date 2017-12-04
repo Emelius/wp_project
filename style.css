@@ -297,6 +297,9 @@ header ul > li > ul > li {
 #events .wp-pagenavi {
     margin: 24px;
 }
+#news .wp-pagenavi {
+    margin: 48px 0px 24px 0px;
+}
 #events h2 {
     margin: 24px 0px;
 }
