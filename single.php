@@ -18,6 +18,18 @@
         </div>
       <article>
         <h1 class="single_h1"><?php the_field('title');?></h1>
+        
+        <?php if ($post_type == 'events') {
+          echo '<h2>Time</h2>';
+          echo '<br>';
+          the_field('date_&_time');
+          echo '<br>';
+          echo '<h2>Location</h2>';
+          echo '<br>';
+          the_field('location');
+        }
+        ?>
+        
         <p class="article_body">
           <?php the_field('text'); ?>
         </p>
