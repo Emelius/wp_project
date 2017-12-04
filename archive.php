@@ -21,7 +21,7 @@
     echo '<div class="categoriesdiv">';
     foreach ($terms as $value) {
     echo '<div class="categories">';
-    echo '<a href="/'; echo $post_type; echo '/;'; echo $value->slug; echo '">';
+    echo '<a href="/'; echo $post_type; echo '/'; echo $value->slug; echo '">';
     echo $value->name;
     echo '</a></div>';
     }
