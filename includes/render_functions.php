@@ -2,7 +2,8 @@
     function showcase($item, $imageSize) {
         $args = array(
             "post_type" => $item,
-            "posts_per_page" => 4
+            "posts_per_page" => 4,
+            "paged" => get_query_var("paged")
         );
 
         $query = new WP_Query($args);

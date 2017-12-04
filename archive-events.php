@@ -25,6 +25,10 @@ get_header();
         <div>
             <?php showcase($post_type, $post_type == "event" ? "wide_thumbnail" : "large_grid_thumbnail"); ?>
         </div>
+        <div>
+        <?php
+            wp_pagenavi();
+        ?></div>
     </section>
 
 <?php
