@@ -109,7 +109,7 @@ header ul li a:hover {
   color: #faae49;
 }
 
-header ul.menu > li:hover:before, header ul.menu > li.current-menu-item:before {
+header ul.menu > li:hover:before, header ul.menu > li.current-menu-item:before, header ul.menu > li.current-menu-parent:before {
     content: "";
     display: block;
     position: absolute;
@@ -119,7 +119,7 @@ header ul.menu > li:hover:before, header ul.menu > li.current-menu-item:before {
     background-color: #707070;
 }
 
-header ul.menu > li.current-menu-item:before {
+header ul.menu > li.current-menu-item:before, header ul.menu > li.current-menu-parent:before {
     background-color: #e0e0e0;
 }
 
