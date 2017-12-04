@@ -81,6 +81,7 @@ header {
   margin: 0 auto;
   background-color: #101010;
   text-align: center;
+  padding-bottom: 4px;
 }
 
 .-page-menu-container {
@@ -118,9 +119,21 @@ header ul.menu > li:hover:before, header ul.menu > li.current-menu-item:before, 
     height: 2px;
     background-color: #707070;
 }
-
 header ul.menu > li.current-menu-item:before, header ul.menu > li.current-menu-parent:before {
     background-color: #e0e0e0;
+}
+header ul.menu > li.menu-item-has-children > a:after {
+    content: ">";
+    color: #a0a0a0;
+    display: block;
+    position: absolute;
+    top: calc(100% - 14px);
+    left: 50%;
+    transform: translateX(-50%);
+    transform: rotate(90deg);
+}
+header ul.menu > li.menu-item-has-children:hover > a:after {
+    display: none;
 }
 
 header ul > li {
