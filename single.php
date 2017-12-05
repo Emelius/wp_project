@@ -15,10 +15,15 @@
             <?php
                 bcn_display();
             ?>
+            <br />
+            <div class="posted_date">
+              Posted: <?php
+              the_date("Y-m-d");?>
+            </div>
         </div>
       <article>
         <h1 class="single_h1"><?php the_field('title');?></h1>
-        
+
         <?php if ($post_type == 'events') {
           echo '<h2>Time</h2>';
           echo '<br>';
@@ -29,8 +34,9 @@
           the_field('location');
         }
         ?>
-        
+
         <p class="article_body">
+
           <?php the_field('text'); ?>
         </p>
         <hr class="bottom_line"/>
@@ -41,7 +47,7 @@
         <div class="more">
         <?php
             include("includes/render_functions.php");
-            showcase($post_type, "tiny_thumbnail");
+            showcase($post_type, "grid_thumbnail");
          ?>
         </div>
       </aside>
