@@ -23,26 +23,33 @@
         </div>
       <article>
         <h1 class="single_h1"><?php the_field('title');?></h1>
-
-        <?php if ($post_type == 'events') {
-          echo '<h2>Time</h2>';
-          echo '<br>';
-          the_field('date_&_time');
-          echo '<br>';
-          echo '<h2>Location</h2>';
-          echo '<br>';
-          the_field('location');
-        }
-        ?>
-
         <p class="article_body">
 
           <?php the_field('text'); ?>
         </p>
         <hr class="bottom_line"/>
+        <div id="loc_time_cont">
+        <?php if ($post_type == 'events') {?>
+          <div id="time">
+            <?php
+            echo '<h2>Time</h2>';
+            echo '<br>';
+            the_field('date_&_time');?>
+          </div>
+          <div id="location">
+            <?php
+            echo '<h2>Location</h2>';
+            echo '<br>';
+            the_field('location');?>
+          </div>
+          <?php
+        }
+        ?>
+        </div>
+        <hr class="bottom_line"/>
       </article>
-
       <aside class="sidelist">
+
         <h2>More <?php echo $post_type; ?> </h2>
         <div class="more">
         <?php

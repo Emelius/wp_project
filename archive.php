@@ -12,12 +12,12 @@
 
     include("includes/render_functions.php");
     $post_type = get_post_type();
-    
-    if ($post_type == 'news') {  
+
+    if ($post_type == 'news') {
     $terms = get_terms(array(
     'taxonomy' => 'news_categories',
     'hide_empty' => true ));
-    
+
     echo '<div class="categoriesdiv">';
     foreach ($terms as $value) {
     echo '<div class="categories">';
@@ -27,12 +27,12 @@
     }
     echo '</div>';
     }
-    
-    if ($post_type == 'events') {  
+
+    if ($post_type == 'events') {
     $terms = get_terms(array(
     'taxonomy' => 'event_categories',
     'hide_empty' => true ));
-    
+
     echo '<div class="categoriesdiv">';
     foreach ($terms as $value) {
     echo '<div class="categories">';
@@ -41,8 +41,8 @@
     echo '</a></div>';
     }
     echo '</div>';
-    }  
-    
+    }
+
 ?>
 
     <section id="<?php echo $post_type ?>">
@@ -52,7 +52,7 @@
             echo $post_label;
         ?></h2>
         <div>
-            <?php showcase($post_type, $post_type == "event" ? "wide_thumbnail" : "large_grid_thumbnail"); ?>
+            <?php showcase($post_type, $post_type == "news" ? "wide_thumbnail" : "large_grid_thumbnail"); ?>
         </div>
     </section>
 
