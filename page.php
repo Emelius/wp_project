@@ -2,40 +2,21 @@
     get_header();
 ?>
 
-<?php
-    $terms = get_terms(array(
-        "taxonomy" => "team"
-    ));
+<section id="organisationContent">
+    <?php
+      if( have_posts() ) {
+        while ( have_posts() ){
+            the_post(); ?>
 
-    foreach($terms as $term) {
-        echo "<h2>" . $term->name . "</h2>";
-
-        $args = array(
-            "post_type" => "members",
-            "tax_query" => array(
-                array(
-                    "taxonomy" => "team",
-                    "field" => "name",
-                    "terms" => $term->name
-                )
-            ),
-            "posts_per_page" => 4
-        );
-
-        $query = new WP_Query($args);
-
-        if ($query->have_posts()) {
-            while ($query->have_posts()) {
-                $query->the_post();
-                ?><div class="item"><?php
-                    ?><a href="<?php the_permalink() ?>"><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ 'grid_thumbnail' ]; echo $thumb; ?>"></a><?php
-                    ?><div class="text"><?php
-                        ?><h3><a href="<?php the_permalink() ?>"><?php the_field('name'); ?></a></h3></div><?php
-                ?></div><?php
-            }
+              <h2><?php the_title();?></h2>
+              <img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ 'single_large' ]; echo $thumb; ?>">
+              <p class="about_text"><?php the_field('text'); ?></p>
+            <?php
+          }
         }
-    }
-?>
+    ?>
+
+</section>
 
 <?php
     get_footer();

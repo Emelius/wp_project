@@ -1,7 +1,7 @@
 <?php
     get_header();
-?>
 
-<?php
+    include("4040.php");
+
     get_footer();
 ?>

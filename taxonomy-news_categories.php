@@ -1,8 +1,6 @@
 <?php
-get_header();
-
-include("includes/render_functions.php");
-$post_type = get_post_type();
+    get_header();
+    include("includes/render_functions.php");
 ?>
 
 <div class="breadcrumbs">

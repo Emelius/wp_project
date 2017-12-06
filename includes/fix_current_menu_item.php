@@ -2,8 +2,10 @@
     function add_classes($classes, $item) {
         global $post;
 
-        if ($item->title == $post->post_name) {
-            $classes[] = "current-menu-item";
+        if (isset($post)) {
+            if ($item->title == $post->post_name) {
+                $classes[] = "current-menu-item";
+            }
         }
 
         return $classes;

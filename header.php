@@ -1,3 +1,5 @@
+<?php include("config.php"); ?>
+
 <!Doctype html>
 <html>
   <head>
@@ -7,7 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <?php wp_head(); ?>
+    <?php
+        wp_enqueue_script("slider", $uri . "/js/slider.js");
+        wp_enqueue_script("adminAdjustments", $uri . "/js/adminAdjustments.js");
+        wp_head();
+    ?>
   </head>
   <body>
 

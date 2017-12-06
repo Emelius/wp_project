@@ -21,7 +21,7 @@
             }
         }
 
-        if (!is_front_page()) {
+        if (!is_front_page() && !is_single()) {
             wp_pagenavi(array(
                 "query" => $query
             ));
