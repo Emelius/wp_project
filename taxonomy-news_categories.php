@@ -3,8 +3,14 @@ get_header();
 
 include("includes/render_functions.php");
 $post_type = get_post_type();
-
 ?>
+
+<div class="breadcrumbs">
+    <?php
+        bcn_display();
+    ?>
+</div>
+
     <section id="<?php echo $post_type ?>">
         <h2><?php
             $post_label = $post_type;
