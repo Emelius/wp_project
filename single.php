@@ -15,21 +15,21 @@
             <?php
                 bcn_display();
             ?>
-            <br />
-            <div class="posted_date">
-              Posted: <?php
-              the_date("Y-m-d");?>
-            </div>
         </div>
       <article>
         <h1 class="single_h1"><?php the_field('title');?></h1>
+        <div class="posted_date">
+          Posted: <?php
+          the_date("Y-m-d");?>
+        </div>
         <p class="article_body">
 
           <?php the_field('text'); ?>
         </p>
-        <hr class="bottom_line"/>
+
         <div id="loc_time_cont">
         <?php if ($post_type == 'events') {?>
+          <hr class="bottom_line"/>
           <div id="time">
             <?php
             echo '<h2>Time</h2>';

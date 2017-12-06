@@ -36,11 +36,11 @@ add_action( 'init', 'add_event_tax' );
 
 function add_event_tax() {
 	register_taxonomy(
-		'event_categories',
+		'events_categories',
 		'events',
 		array(
 			'label' => __( 'Event Categories' ),
-			'rewrite' => array( 'slug' => 'event_categories' ),
+			'rewrite' => array( 'slug' => 'events_categories' ),
 			'hierarchical' => true,
 			'has_archive' => true,
 			'public' => true,

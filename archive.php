@@ -21,7 +21,7 @@
     echo '<div class="categoriesdiv">';
     foreach ($terms as $value) {
     echo '<div class="categories">';
-    echo '<a href="/'; echo $post_type; echo '/'; echo $value->slug; echo '">';
+    echo '<a href="/'; echo $post_type; echo '_categories/'; echo $value->slug; echo '">';
     echo $value->name;
     echo '</a></div>';
     }
@@ -30,13 +30,13 @@
 
     if ($post_type == 'events') {
     $terms = get_terms(array(
-    'taxonomy' => 'event_categories',
+    'taxonomy' => 'events_categories',
     'hide_empty' => true ));
 
     echo '<div class="categoriesdiv">';
     foreach ($terms as $value) {
     echo '<div class="categories">';
-    echo '<a href="/'; echo $post_type; echo '/'; echo $value->slug; echo '">';
+    echo '<a href="/'; echo $post_type; echo '_categories/'; echo $value->slug; echo '">';
     echo $value->name;
     echo '</a></div>';
     }
