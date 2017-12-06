@@ -198,6 +198,22 @@ header ul > li > ul > li {
   text-align:center;
 }
 
+.more > .item > .text {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  padding: 24px 0 24px 24px;
+  box-sizing: border-box;
+}
+
+.more > .item > img {
+  display: inline-block;
+}
+
+.more > .item {
+  position: relative;
+}
+
 .item a{
   text-decoration:none;
   color: black;
@@ -370,10 +386,6 @@ article{
 
 }
 
-
-.more .item .text{
-  width: 100%;
-}
 #loc_time_cont{
   overflow: hidden;
 }
@@ -688,6 +700,12 @@ html #wpadminbar {
         padding: 0px 16px;*/
         position: relative;
     }
+    
+    #events > .archivediv > .item {
+      width: 600px;
+      height: auto;
+    }
+    
     .slider {
         height: 525px;
     }

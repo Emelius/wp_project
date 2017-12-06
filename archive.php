@@ -51,8 +51,8 @@
             $post_label[0] = strtoupper($post_label[0]);
             echo $post_label;
         ?></h2>
-        <div>
-            <?php showcase($post_type, $post_type == "news" ? "wide_thumbnail" : "large_grid_thumbnail"); ?>
+        <div class="archivediv">
+            <?php showcase($post_type, $post_type == "news" ? "wide_thumbnail" : "big_grid_thumbnail"); ?>
         </div>
     </section>
 
