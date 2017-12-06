@@ -439,19 +439,24 @@ input, textarea {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  font-family: 'Didact Gothic', sans-serif;
+
 
 /*Styling we want*/
 	font-weight: 100;
 	font-size: 10pt;
 	border-bottom: 1px solid #000;
 	width: 100%;
-	padding: 10px 0px;
+	padding: 10px 5px;
 	box-sizing: border-box;
 }
 
 textarea {
 	height:213px;
   border:solid 1px #000;
+  font-family: 'Didact Gothic', sans-serif;
+  padding: 10px;
+
 }
 
 .status{
