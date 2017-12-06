@@ -74,6 +74,15 @@ a:hover {
     margin: 24px auto;
 }
 
+.breadcrumbs a{
+    text-decoration:none;
+}
+
+.breadcrumbs a:hover{
+    color: #faae49;
+    text-decoration: underline;
+}
+
 /************************ Header ***********************/
 
 header {
@@ -121,12 +130,12 @@ header ul.menu > li.current-menu-item:before, header ul.menu > li.current-menu-p
     background-color: #e0e0e0;
 }
 header ul.menu > li.menu-item-has-children > a:after {
-    content: ">";
-    color: #a0a0a0;
+    content: "►";
+    color: #ffffff;
     display: inline;
     position: absolute;
-    margin-left:5px;
-    font-size:20px;
+    margin:5px;
+    font-size:12px;
     transform: translateX(-50%);
     transform: rotate(90deg);
 }
@@ -314,7 +323,7 @@ header ul > li > ul > li {
 }
 #events .item .text {
     display: inline-block;
-    padding: 24px 0 24px 24px;
+    padding: 24px 20px;
     box-sizing: border-box;
 }
 #events .item .text p {
@@ -335,24 +344,25 @@ header ul > li > ul > li {
 .categoriesdiv {
   max-width: 960px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .categoriesdiv > .categories {
   display: inline-block;
-  margin: 24px 45px 0px 45px;
+  margin: 24px 20px 0 0;
+  /*box-shadow: 2px 2px 40px #ccc;*/
 }
 
 .categoriesdiv > .categories a {
   text-decoration: none;
-  color: #000;
   text-transform: capitalize;
   transition: color 0.2s ease;
+  font-size:14pt;
+  color:#faae49;
 }
 
 .categoriesdiv > .categories a:hover {
-  color: #faae49;
   font-weight: 500;
+  border-bottom:1px solid #faae49;
 }
 
 /********************** single post ********************/
@@ -547,7 +557,7 @@ select:-webkit-autofill:focus {
   background-color: #000;
 }
 
-/************ Main **************/
+/**************************** Main *************************/
 main{
   overflow: hidden;
 }
@@ -616,6 +626,7 @@ img.icon {
   height:30px;
   width:30px;
   border-radius: 7px;
+  transition: color 0.2s ease;
 }
 img.icon:hover {
     /*filter: invert(50%) sepia(100%) saturate(8000%) hue-rotate(60deg) saturate(1000%);*/
