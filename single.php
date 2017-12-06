@@ -54,7 +54,7 @@
         <div class="more">
         <?php
             include("includes/render_functions.php");
-            showcase($post_type, "grid_thumbnail");
+            showcase($post_type, "large_grid_thumbnail");
          ?>
         </div>
       </aside>

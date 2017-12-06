@@ -72,7 +72,8 @@ a:hover {
 /**********************************************/
 
 .breadcrumbs {
-    margin: 24px 0px;
+    max-width: 960px;
+    margin: 24px auto;
 }
 
 /************************ Header ***********************/
@@ -195,6 +196,22 @@ header ul > li > ul > li {
 /********* Låt mig vara :) ***********/
 #welcome h2 {
   text-align:center;
+}
+
+.more > .item > .text {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  padding: 24px 0 24px 24px;
+  box-sizing: border-box;
+}
+
+.more > .item > img {
+  display: inline-block;
+}
+
+.more > .item {
+  position: relative;
 }
 
 .item a{
@@ -369,10 +386,6 @@ article{
 
 }
 
-
-.more .item .text{
-  width: 100%;
-}
 #loc_time_cont{
   overflow: hidden;
 }
@@ -429,6 +442,7 @@ form {
 label {
 	display:block;
 	margin-top:20px;
+  font-weight: 400;
 }
 
 input, textarea {
@@ -443,20 +457,73 @@ input, textarea {
 
 
 /*Styling we want*/
+  font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
 	font-size: 10pt;
 	border-bottom: 1px solid #000;
 	width: 100%;
 	padding: 10px 5px;
 	box-sizing: border-box;
+  
 }
-
 textarea {
+<<<<<<< HEAD
 	height:213px;
   border:solid 1px #000;
   font-family: 'Didact Gothic', sans-serif;
   padding: 10px;
 
+=======
+  min-height: 100px;
+  border: 1px solid #000;
+  padding: 7px;
+  margin-top: 7px;
+}
+
+textarea:focus {
+  outline: none !important;
+    border-color:#faae49;
+}
+
+input:focus {
+    outline: none !important;
+    border-color:#faae49;
+}
+
+/*************** Autofill forms**********/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #faae49;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+/************ Placeholders **************/
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #000;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #000;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #000;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #000;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #000;
+>>>>>>> 6900655cc8ed88f3f5d15c92b931468b64db5958
 }
 
 .status{
@@ -466,6 +533,7 @@ textarea {
   }
 
 #submit {
+  font-weight: 400;
 	background-color: #faae49;
   color: #fff;
 	width:127px;
@@ -473,12 +541,12 @@ textarea {
 	border:none;
 	margin-top:20px;
 	cursor:pointer;
+  transition: all 0.2s ease;
 }
 
-	#submit:hover {
-    transition: color 0.2s ease;
-    background-color: #000;
-	}
+#submit:hover {
+  background-color: #000;
+}
 
 /************ Main **************/
 main{
@@ -642,6 +710,12 @@ html #wpadminbar {
         padding: 0px 16px;*/
         position: relative;
     }
+    
+    #events > .archivediv > .item {
+      width: 600px;
+      height: auto;
+    }
+    
     .slider {
         height: 525px;
     }
