@@ -3,7 +3,17 @@
     include("config.php");
 ?>
 
-<div class="backgroundImage"><div class="custom_logo"><?php the_custom_logo();?></div></div>
+<div class="backgroundImage">
+  <div class="custom_logo">
+    <?php
+      if ( has_custom_logo() ) {
+        the_custom_logo();
+      } else {
+        echo '<h1 class="title">'. get_bloginfo( 'name' ) .'</h1>';
+      }
+  ?>
+  </div>
+</div>
 
 <?php
     include("includes/render_functions.php");
