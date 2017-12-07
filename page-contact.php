@@ -9,7 +9,7 @@
             the_post(); ?>
             <div class="left_box">
               <h2><?php the_title();?></h2>
-              <img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ 'large_grid_thumbnail' ]; echo $thumb; ?>">
+              <img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ 'big_square' ]; echo $thumb; ?>">
               <p class="text_box"><?php
               the_field('text'); ?></p>
             </div>

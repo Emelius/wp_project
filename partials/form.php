@@ -42,7 +42,7 @@
                 $email = $_POST['emailInput'];
                 $message = $_POST['messageInput'];
                 $from = "From: contact@entrepreneurshipacademy.se";
-                $to = 'contact@entrepreneurshipacademy.se';
+                $to = 'granlund.johannes@gmail.com';
                 $subject = "Contact from {$name}: {$_POST['subject']}";
                 $human = $_POST['human'];
 

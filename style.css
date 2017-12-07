@@ -580,6 +580,8 @@ main:after {
   display: inline-block;
   margin: 30px;
   text-align: center;
+  height: 150px;
+  width: 150px;
 }
 
 .memberText{
@@ -750,7 +752,7 @@ html #wpadminbar {
 
 @media (min-width: 1100px) {
     .header_img{
-      height: 500px;
+      height: 600px;
     }
 
     article {
