@@ -450,7 +450,9 @@ article{
   width: 50%;
   display: inline-block;
 }
-
+.right_box li{
+    list-style:none;
+}
 .right_box form{
   margin:52px 60px 0 0;
 }
@@ -500,9 +502,26 @@ textarea:focus {
     border-color:#faae49;
 }
 
-input:focus {
+p  input:focus, label:focus {
     outline: none !important;
-    border-color:#faae49;
+    border-bottom: 1px solid #faae49;
+}
+p > input:focus {
+    outline: none !important;
+    border-bottom: 1px solid #000;
+}
+p > input:hover{
+    border: 1px solid #faae49;
+    background-color: #faae49;
+    color:#fff;
+}
+p > input, p span > textarea{
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+p > input{
+  background: #000;
+  color: #fff;
 }
 
 /*************** Autofill forms**********/
