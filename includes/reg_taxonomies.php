@@ -2,16 +2,16 @@
 function create_team() {
 
   $labels = array(
-    'name'                       => _x( 'Team', 'Taxonomy General Name', 'EAcademy' ),
-    'singular_name'              => _x( 'Team', 'Taxonomy Singular Name', 'EAcademy' ),
-    'menu_name'                  => __( 'Teams', 'EAcademy' ),
-    'all_items'                  => __( 'All Teams', 'EAcademy' ),
-    'new_item_name'              => __( 'New Team Name', 'EAcademy' ),
-    'add_new_item'               => __( 'Add New Team', 'EAcademy' ),
-    'edit_item'                  => __( 'Edit Team', 'EAcademy' ),
-    'update_item'                => __( 'Update Team', 'EAcademy' ),
-    'add_or_remove_items'        => __( 'Add or remove team', 'EAcademy' ),
-    'popular_items'              => __( 'Popular Teams', 'EAcademy' ),
+    'name'                       => _x( 'Team', 'Taxonomy General Name', 'eacademy' ),
+    'singular_name'              => _x( 'Team', 'Taxonomy Singular Name', 'eacademy' ),
+    'menu_name'                  => __( 'Teams', 'eacademy' ),
+    'all_items'                  => __( 'All Teams', 'eacademy' ),
+    'new_item_name'              => __( 'New Team Name', 'eacademy' ),
+    'add_new_item'               => __( 'Add New Team', 'eacademy' ),
+    'edit_item'                  => __( 'Edit Team', 'eacademy' ),
+    'update_item'                => __( 'Update Team', 'eacademy' ),
+    'add_or_remove_items'        => __( 'Add or remove team', 'eacademy' ),
+    'popular_items'              => __( 'Popular Teams', 'eacademy' ),
 	);
 	$args = array(
     'labels'                     => $labels,
@@ -39,7 +39,7 @@ function add_event_tax() {
 		'events_categories',
 		'events',
 		array(
-			'label' => __( 'Event Categories' ),
+			'label' => __( 'Event Categories', 'eacademy' ),
 			'rewrite' => array( 'slug' => 'events_categories' ),
 			'hierarchical' => true,
 			'has_archive' => true,
@@ -60,7 +60,7 @@ function add_news_tax() {
 		'news_categories',
 		'news',
 		array(
-			'label' => __( 'News Categories' ),
+			'label' => __( 'News Categories', 'eacademy' ),
 			'rewrite' => array( 'slug' => 'news_categories' ),
 			'hierarchical' => true,
 			'has_archive' => true,

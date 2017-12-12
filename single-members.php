@@ -1,5 +1,5 @@
 <?php
 
-header('#');
+get_template_part("404");
 
 ?>

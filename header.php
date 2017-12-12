@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <?php
-        wp_enqueue_script("slider", $uri . "/js/slider.js");
+        if (is_front_page()) wp_enqueue_script("slider", $uri . "/js/slider.js");
         wp_enqueue_script("adminAdjustments", $uri . "/js/adminAdjustments.js");
         wp_head();
     ?>
