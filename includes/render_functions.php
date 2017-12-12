@@ -15,8 +15,8 @@
                     ?><a href="<?php the_permalink() ?>"><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ $imageSize ]; echo $thumb; ?>"></a><?php
                     ?><div class="text"><?php
                         ?><h3><a href="<?php the_permalink() ?>"><?php the_field('title'); ?></a></h3><?php
-                        the_field('excerpt');
-                    ?></div><?php
+                        ?><p><?php the_field('excerpt'); ?></p>
+                    </div><?php
                 ?></div><?php
             }
         }

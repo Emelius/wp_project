@@ -27,6 +27,7 @@ body {
     top: 0px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    font-size: 15px;
     display: block;
     word-wrap: break-word;
 }
@@ -321,6 +322,9 @@ header ul > li > ul > li {
 #events .item > a {
     display: inline-block;
 }
+#events .item h3 {
+    margin-top: 0px;
+}
 #events .item img {
     display: inline-block;
 }
@@ -331,6 +335,7 @@ header ul > li > ul > li {
 }
 #events .item .text p {
     text-align: left;
+    word-break: break-all;
 }
 #events .wp-pagenavi {
     margin: 24px;
@@ -720,6 +725,8 @@ html #wpadminbar {
     #events .item .text {
         position: absolute;
         top: 0px;
+        left: 50%;
+        right: 0px;
     }
     #events .item {
         width: 408px;
