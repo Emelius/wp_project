@@ -19,7 +19,7 @@
     ?>
 
         <div class="right_box">
-          <?php get_template_part('partials/form');?>
+          <?php dynamic_sidebar ('contact'); ?>
         </div>
     </section>
 
