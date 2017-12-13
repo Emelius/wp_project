@@ -18,10 +18,10 @@
         }
     ?>
 
-    <div class="right_box">
-      <?php get_template_part('partials/form');?>
-    </div>
-</section>
+        <div class="right_box">
+          <?php get_template_part('partials/form');?>
+        </div>
+    </section>
 
 <?php
     get_footer();
