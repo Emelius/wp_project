@@ -6,11 +6,11 @@
             "post_type" => $item,
             "posts_per_page" => 4,
             "paged" => get_query_var("paged") ? get_query_var("paged") : 1,
-            "tax_query" => array( array(
+            "tax_query" => get_query_var($category) ? array( array(
                 "taxonomy" => $category,
                 "field" => "name",
                 "terms" => get_query_var($category)
-            ))
+            )) : NULL
         );
 
         $query = new WP_Query($args);

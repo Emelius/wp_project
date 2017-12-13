@@ -2,6 +2,7 @@
     get_header();
 
     include("includes/render_functions.php");
+    $post_type = get_post_type();
 
     $terms = get_terms(array(
         'taxonomy' => $post_type . '_categories',
