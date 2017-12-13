@@ -190,7 +190,7 @@ header ul > li > ul > li {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  height:100%;
+  height:initial;
 }
 
 .title {
