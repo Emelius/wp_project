@@ -29,7 +29,6 @@ body {
     font-weight: 300;
     font-size: 15px;
     display: block;
-    word-wrap: break-word;
 }
 
 section {
@@ -335,7 +334,6 @@ header ul > li > ul > li {
 }
 #events .item .text p {
     text-align: left;
-    word-break: break-all;
 }
 #events .wp-pagenavi {
     margin: 24px;
@@ -590,6 +588,7 @@ select:-webkit-autofill:focus {
 /**************************** Main *************************/
 main{
   overflow: hidden;
+  word-break: break-all;
 }
 main:after {
     display: block;
