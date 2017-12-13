@@ -8,7 +8,7 @@
             "paged" => get_query_var("paged") ? get_query_var("paged") : 1,
             "tax_query" => get_query_var($category) ? array( array(
                 "taxonomy" => $category,
-                "field" => "name",
+                "field" => "slug",
                 "terms" => get_query_var($category)
             )) : NULL
         );
