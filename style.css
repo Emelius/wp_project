@@ -347,6 +347,10 @@ header ul > li > ul > li {
 
 /*********************** Archive ***********************/
 
+#currentCategory a {
+    color: #101010;
+}
+
 .categoriesdiv {
   max-width: 960px;
   margin: 0 auto;

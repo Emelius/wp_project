@@ -10,9 +10,10 @@
     ));
 
     echo '<div class="categoriesdiv">';
+    echo '<div class="categories" id="'; echo (!(get_query_var($post_type . '_categories'))) ? "currentCategory" : NULL; echo '">'; echo '<a href="/' . $post_type . '">All</a></div>';
 
     foreach ($terms as $value) {
-        echo '<div class="categories">';
+        echo '<div class="categories" id="'; echo (get_query_var($post_type . '_categories') == $value->slug) ? "currentCategory" : NULL; echo '">';
         echo '<a href="/'; echo $post_type; echo '_categories/'; echo $value->slug; echo '">';
         echo $value->name;
         echo '</a></div>';
