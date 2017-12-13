@@ -17,8 +17,9 @@
             echo $post_label;
         ?></h2>
         <div>
-            <?php 
-                if ( have_posts() ) {
+            <?php
+                showcase($post_type, $post_type == "news" ? "wide_thumbnail" : "big_grid_thumbnail");
+                /*if ( have_posts() ) {
                     while ( have_posts() ) {
                         the_post();
                         ?><div class="item"><?php
@@ -29,7 +30,7 @@
                         ?></div><?php
                         ?></div><?php
                     }
-                }
+                }*/
             ?>
         </div>
     </section>

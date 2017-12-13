@@ -16,20 +16,21 @@
             $post_label[0] = strtoupper($post_label[0]);
             echo $post_label;
         ?></h2>
-        <div class="archivediv">
-            <?php 
-                if ( have_posts() ) {
+        <div>
+            <?php
+                showcase($post_type, $post_type == "news" ? "wide_thumbnail" : "big_grid_thumbnail");
+                /*if ( have_posts() ) {
                     while ( have_posts() ) {
                         the_post();
                         ?><div class="item"><?php
-                        ?><a href="<?php the_permalink() ?>"><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ "big_grid_thumbnail" ]; echo $thumb; ?>"></a><?php
+                        ?><a href="<?php the_permalink() ?>"><img src="<?php $image = get_field('image'); $thumb = $image['sizes'][ "wide_thumbnail" ]; echo $thumb; ?>"></a><?php
                         ?><div class="text"><?php
                         ?><h3><a href="<?php the_permalink() ?>"><?php the_field('title'); ?></a></h3><?php
                         the_field('excerpt');
                         ?></div><?php
                         ?></div><?php
                     }
-                }
+                }*/
             ?>
         </div>
     </section>
@@ -37,4 +38,3 @@
 <?php
     get_footer();
 ?>
-

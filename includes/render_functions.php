@@ -1,9 +1,16 @@
 <?php
     function showcase($item, $imageSize) {
+        $category = $item . "_categories";
+
         $args = array(
             "post_type" => $item,
             "posts_per_page" => 4,
-            "paged" => get_query_var("paged") ? get_query_var("paged") : 1
+            "paged" => get_query_var("paged") ? get_query_var("paged") : 1,
+            "tax_query" => array( array(
+                "taxonomy" => $category,
+                "field" => "name",
+                "terms" => get_query_var($category)
+            ))
         );
 
         $query = new WP_Query($args);
