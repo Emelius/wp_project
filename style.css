@@ -223,7 +223,7 @@ header ul > li > ul > li {
   display: inline-block;
   position: absolute;
   top: 0px;
-  padding: 24px 0 24px 24px;
+  padding: 24px;
   box-sizing: border-box;
 }
 
@@ -735,7 +735,6 @@ html #wpadminbar {
         position: relative;
     }
     #events .item p, #events .item h3 {
-        font-size: 10px;
         margin-top: 4px;
     }
 
