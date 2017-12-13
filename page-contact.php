@@ -18,10 +18,10 @@
         }
     ?>
 
-    <div class="right_box">
-      <?php get_template_part('partials/form');?>
-    </div>
-</section>
+        <div class="right_box">
+          <?php dynamic_sidebar ('contact'); ?>
+        </div>
+    </section>
 
 <?php
     get_footer();
