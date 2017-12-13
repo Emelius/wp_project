@@ -596,6 +596,11 @@ main:after {
     content: "";
     height: calc(196px + 54px);
 }
+
+/************ Organisation **************/
+#organisationContent img{
+  width:100%;
+}
 /************ Teams and members **************/
 
 .team {
